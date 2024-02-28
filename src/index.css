@@ -1,0 +1,18 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --main-bg-color: #3fbbc0;
+  --secondary-bg-color: #00ffd9;
+  --bg-color-white: #fff;
+}
+
+section[id] {
+
+  scroll-margin-top: 8rem;
+}

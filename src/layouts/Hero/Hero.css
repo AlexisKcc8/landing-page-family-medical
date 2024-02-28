@@ -1,0 +1,64 @@
+.my-container-fluid {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/public/imgs/hero-device-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+  .container {
+
+
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000a3;
+
+      .container-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+
+        .figure-logo {
+          width: 15rem;
+          overflow: hidden;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .title {
+          font-size: 2rem;
+          color: var(--secondary-bg-color);
+          font-weight: 700;
+        }
+
+        .subtitle {
+          font-size: 2.8rem;
+
+        }
+
+        .description {
+          font-size: 1.3rem;
+
+        }
+      }
+    }
+  }
+
+}
