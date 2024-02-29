@@ -7,12 +7,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --main-bg-color: #3fbbc0;
-  --secondary-bg-color: #00ffd9;
-  --bg-color-white: #fff;
+  --height-header-and-margin-sections: 3rem;
 }
 
 section[id] {
-
-  scroll-margin-top: 8rem;
+  scroll-margin-top: calc(var(--height-header-and-margin-sections) + 1rem);
 }

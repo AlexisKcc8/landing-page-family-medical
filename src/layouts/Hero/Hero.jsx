@@ -1,4 +1,4 @@
-import "./Hero.css";
+import "./stylesHero.scss";
 export const Hero = () => {
   return (
     <section
@@ -19,7 +19,7 @@ export const Hero = () => {
                 </figure>
                 <h2 className="title">ADREAN FUENTES</h2>
                 <h3 className="subtitle">
-                  <strong>Especialista Medico Familiar</strong>
+                  <strong>MÉDICO CIRUJANO</strong>
                 </h3>
                 <p className="description">
                   "Su familia, nuestra prioridad: atención médica de calidad

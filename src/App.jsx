@@ -1,4 +1,5 @@
 import "./App.css";
+import { Banner } from "./components/Banner/Banner";
 import { Nabvar } from "./components/Nabvar/Nabvar";
 import { Hero } from "./layouts/Hero/Hero";
 
@@ -8,6 +9,7 @@ function App() {
       <Nabvar />
       <main>
         <Hero />
+        <Banner />
       </main>
       <br />
       <br />

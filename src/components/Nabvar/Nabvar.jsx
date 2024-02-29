@@ -1,4 +1,11 @@
+import { useRef } from "react";
+import { linksNabvar } from "../../data/Nabvar";
+
 export const Nabvar = () => {
+  const collapsedMenu = useRef();
+  const toggleShowMenu = () => {
+    collapsedMenu.current.classList.toggle("show");
+  };
   return (
     <nav className="navbar navbar-expand-lg container-fluid bg-white fixed-top d-lg-flex flex-lg-column py-0">
       <div
@@ -28,49 +35,27 @@ export const Nabvar = () => {
         </button>
         <div
           className="collapse navbar-collapse  w-50 d-lg-flex  justify-content-lg-end"
+          ref={collapsedMenu}
           id="navbarNavDropdown"
         >
           <ul className="navbar-nav ">
-            <li className="nav-item ">
-              <strong>
-                <a
-                  className="nav-link text-dark"
-                  aria-current="page"
-                  href="#inicio"
-                >
-                  Inicio
-                </a>
-              </strong>
-            </li>
-            <li className="nav-item">
-              <strong>
-                <a className="nav-link text-dark" href="#">
-                  Servicios
-                </a>
-              </strong>
-            </li>
-            <li className="nav-item">
-              <strong>
-                <a className="nav-link text-dark" href="#">
-                  Misión y Visión
-                </a>
-              </strong>
-            </li>
-            <li className="nav-item">
-              <strong>
-                <a className="nav-link text-dark" href="#">
-                  Facilidades
-                </a>
-              </strong>
-            </li>
-            <li className="nav-item">
-              <strong>
-                {" "}
-                <a className="nav-link text-dark" href="#">
-                  Preciós
-                </a>
-              </strong>
-            </li>
+            {linksNabvar ? (
+              linksNabvar.map((link) => (
+                <li key={link.id} className="nav-item ">
+                  <a
+                    className="nav-link text-dark"
+                    aria-current="page"
+                    href={link.href}
+                    onClick={toggleShowMenu}
+                  >
+                    <strong>{link.title}</strong>
+                  </a>
+                </li>
+              ))
+            ) : (
+              <h3>Datos no encontrados</h3>
+            )}
+
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle text-dark"

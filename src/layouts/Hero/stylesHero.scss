@@ -1,7 +1,10 @@
+@import "../../partials/box-flex";
+@import "../../partials/variables";
+
 .my-container-fluid {
   width: 100%;
   min-height: 100vh;
-  background-image: url("/public/imgs/hero-device-desktop.jpg");
+  background-image: url("/imgs/hero-device-desktop.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,8 +12,6 @@
   position: relative;
 
   .container {
-
-
     .layer {
       position: absolute;
       top: 0;
@@ -20,20 +21,14 @@
       background-color: #000000a3;
 
       .container-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
+        @include box-flex($direction: column);
+        color: $bg-color-white;
         text-align: center;
 
         .figure-logo {
           width: 15rem;
           overflow: hidden;
-
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include box-flex;
 
           img {
             width: 100%;
@@ -44,12 +39,12 @@
 
         .title {
           font-size: 2rem;
-          color: var(--secondary-bg-color);
+          color: $secondary-bg-color;
           font-weight: 700;
         }
 
         .subtitle {
-          font-size: 2.8rem;
+          font-size: 3rem;
 
         }
 
