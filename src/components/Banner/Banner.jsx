@@ -2,7 +2,7 @@ import { iconBanner } from "../../data/banner";
 import "./styleBanner.scss";
 export const Banner = () => {
   return (
-    <section className="container-fluid ">
+    <section className="container-fluid container-fluid-banner">
       <article className="container p-0 overflow-hidden">
         <div className="row py-3">
           {iconBanner ? (

@@ -1,7 +1,9 @@
 @import "../../partials/box-flex";
 @import "../../partials/variables";
 
-.container-fluid {
+.container-fluid-banner {
+  background-color: $main-bg-color;
+
   .container {
     .row {
       .item-banner {
