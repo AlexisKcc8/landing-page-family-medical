@@ -34,7 +34,7 @@ export const AboutMe = () => {
         <article className="row d-flex pt-3 ">
           <div className="col-12 col-md-6 order-md-2 container-img overflow-hidden py-3">
             <figure className="h-100">
-              <img src="/imgs/img-about-me.jpg" alt="img-sobre-mi" />
+              <img src="/imgs/aboutMe/img-about-me.jpg" alt="img-sobre-mi" />
             </figure>
           </div>
           <div className="col-12 col-md-6 order-md-1 text-start">

@@ -3,22 +3,26 @@ import { v4 as uuidv4 } from "uuid";
 export const iconBanner = [
   {
     id: uuidv4(),
-    icon: "/Icons/check-circle.svg",
-    title: "Agendar una cita",
-  },
-  {
-    id: uuidv4(),
-    icon: "/Icons/package.svg",
-    title: "Elige tu Paquete",
+    icon: "/Icons/paciente.png",
+    title: "50+",
+    subtitle: "Pacientes cada dia",
   },
   {
     id: uuidv4(),
     icon: "/Icons/doctor.svg",
-    title: "Especialista",
+    title: "15+",
+    subtitle: "Personales calificados",
   },
   {
     id: uuidv4(),
-    icon: "/Icons/hospital.svg",
-    title: `Obtener informe de diagnóstico`,
+    icon: "/Icons/experiencia.png",
+    title: "20+",
+    subtitle: "Años de expreciencia",
+  },
+  {
+    id: uuidv4(),
+    icon: "/Icons/diagnosticos-veridico.png",
+    title: `150+`,
+    subtitle: "Diagnosticos veridicos",
   },
 ];

@@ -14,23 +14,25 @@
           text-align: center;
 
           .content {
-            @include box-flex($direction: column);
+            @include box-flex;
 
             .figure-icon {
               width: 4rem;
               height: 4rem;
               margin: 0;
+              margin: 0 .5rem 0 0;
 
               img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
               }
             }
 
             .title {
-
               font-weight: bold;
+              font-size: 2.8rem;
+              margin: 0;
             }
           }
         }

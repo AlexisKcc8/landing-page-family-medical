@@ -10,10 +10,13 @@ export const Banner = () => {
               <div key={item.id} className="col-12 col-md-3 item-banner">
                 <div className="card-item-banner" data-wow-delay="0.2s">
                   <div className="content">
-                    <figure className="figure-icon">
+                    <figure className="figure-icon ">
                       <img src={item.icon} alt={`icon-${item.title}`} />
                     </figure>
-                    <h4 className="title">{item.title}</h4>
+                    <div className="text-start  p-0 text-white">
+                      <h4 className="title">{item.title}</h4>
+                      <p className="m-0">{item.subtitle}</p>
+                    </div>
                   </div>
                 </div>
               </div>
