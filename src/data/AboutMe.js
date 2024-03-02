@@ -30,32 +30,32 @@ export const advantageMe = [
 export const iconsAboutMe = [
   {
     id: uuidv4(),
-    src: "/public/Icons/integral.png",
+    src: "/Icons/integral.png",
     alt: "icon-integral",
   },
   {
     id: uuidv4(),
-    src: "/public/Icons/hospital.png",
+    src: "/Icons/hospital.png",
     alt: "icon-hospital",
   },
   {
     id: uuidv4(),
-    src: "/public/Icons/aguja.png",
+    src: "/Icons/aguja.png",
     alt: "icon-habilidad-quirurgica",
   },
   {
     id: uuidv4(),
-    src: "/public/Icons/microscopio.png",
+    src: "/Icons/microscopio.png",
     alt: "icon-microscopio",
   },
   {
     id: uuidv4(),
-    src: "/public/Icons/sabiduria.png",
+    src: "/Icons/sabiduria.png",
     alt: "icon-empatia",
   },
   {
     id: uuidv4(),
-    src: "/public/Icons/corazon.png",
+    src: "/Icons/corazon.png",
     alt: "icon-amor",
   },
 ];
