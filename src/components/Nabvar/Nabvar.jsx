@@ -23,7 +23,8 @@ export const Nabvar = () => {
                 />
               </figure>
               <h6 className="info-text m-0 p-0">
-                Horario: L a V de 8:00 am a 10:00 pm, S y D de 4:00 pm a 8:00 pm
+                Horario: L a V de 4:00 pm a 10:00 pm, S y D de 8:00 am a 10:00
+                pm (previa cita).
               </h6>
             </div>
             <div className="col-12 col-md-6  container-social-media d-none d-md-block">
