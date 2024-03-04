@@ -22,7 +22,7 @@
 
       .container-content {
         @include box-flex($direction: column);
-        color: $bg-color-white;
+        color: $color-white;
         text-align: center;
 
         .figure-logo {

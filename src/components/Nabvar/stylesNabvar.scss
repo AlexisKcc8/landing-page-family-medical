@@ -1,0 +1,60 @@
+@import "../../partials/box-flex";
+@import "../../partials/media-queries";
+@import "../../partials/variables";
+
+.container-fluid-navbar {
+  // background-color: #fff;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.91);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+  // border: 1px solid rgba(255, 255, 255, 0.13);
+
+  .container-social-media-info {
+
+    background-color: $main-bg-color;
+
+    .container {
+      .row {
+        .container-info-open {
+          text-align: center;
+          @include box-flex;
+
+          @include querie-compu {
+            justify-content: flex-start;
+          }
+
+          .figure-clock {
+            width: 1.5rem;
+
+            @include querie-compu {
+              margin: 0 .5rem 0 0;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .info-text {
+            font-size: .8rem;
+            color: $color-white;
+
+            @include querie-compu {
+              font-size: .95rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
