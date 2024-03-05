@@ -1,4 +1,5 @@
 import { CarouselGallery } from "@components/CarouselGallery/CarouselGallery";
+import { GridGallery } from "@components/GridGallery/GridGallery";
 import { dataRecognitions } from "@data/galleryRecognition";
 
 import "./stylesRecognitionGallery.scss";
@@ -11,9 +12,13 @@ export const RecognitionGallery = () => {
             <p className="m-0 subtitle">
               <strong>Si gustas puedes hecharle un ojo a</strong>
             </p>
-            <h2 className=" title">
+            <h2 className="title m-0 p-0">
               <strong>Mis reconocimientos</strong>
             </h2>
+            <p className="note">
+              Para una mejor visualización de las imagenes, puede presionar
+              sobre ellas.
+            </p>
           </section>
         </header>
 
@@ -25,24 +30,13 @@ export const RecognitionGallery = () => {
             />
           </article>
         </section>
-        {/* <section className="row-gallery-imgs row pswp-gallery" id={galleryID}>
-          {images.map((image, index) => (
-            <div
-              className="container-img-gallery col-6 col-md-4 border"
-              key={galleryID + "-" + index}
-            >
-              <a
-                href={image.srcImgWebp}
-                data-pswp-width={image.width}
-                data-pswp-height={image.height}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={image.srcImgWebp} alt="" />
-              </a>
-            </div>
-          ))}
-        </section> */}
+
+        <section className="container d-none d-md-block">
+          <GridGallery
+            galleryID={dataRecognitions.galleryID}
+            images={dataRecognitions.images}
+          />
+        </section>
       </article>
     </section>
   );

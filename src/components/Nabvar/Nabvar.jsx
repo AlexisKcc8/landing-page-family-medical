@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 import { dataLinksNabvar } from "@data/Nabvar";
-import { ItemsSocialMedia } from "@components/itemsSocialMedia/ItemsSocialMedia";
+import { ItemsSocialMedia } from "@components/ItemsSocialMedia/ItemsSocialMedia";
 
 import "./stylesNabvar.scss";
 export const Nabvar = () => {
