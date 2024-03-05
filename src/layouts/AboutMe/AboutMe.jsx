@@ -1,27 +1,27 @@
-import { advantageMe, iconsAboutMe } from "../../data/AboutMe";
+import { dataAdvantageMe, dataIconsAboutMe } from "@data/AboutMe";
 import "./stylesAboutMe.scss";
 export const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className="container-fluid min-vh-100 overflow-hidden pt-5"
+      className="container-fluid container-fluid-about-me min-vh-100 overflow-hidden pt-5"
     >
-      <section className="container text-center overflow-hidden">
-        <div className="row">
-          <p className="m-0" style={{ color: "#3fbbc0" }}>
+      <section className="container-about-me container overflow-hidden">
+        <header className="row-header row">
+          <p className="m-0 subtitle">
             <strong>Conoce un poco sobre mi</strong>
           </p>
-          <h3 className="m-0 ">
+          <h3 className="m-0">
             <strong>Descubre quién está detrás del sitio.</strong>
           </h3>
-        </div>
+        </header>
 
-        <article className="row py-3">
-          {iconsAboutMe ? (
-            iconsAboutMe.map((icon) => (
+        <article className="row-icons row py-3">
+          {dataIconsAboutMe ? (
+            dataIconsAboutMe.map((icon) => (
               <div
                 key={icon.id}
-                className="col-6 col-md-2 mb-3 mb-md-0 d-flex justify-content-center align-items-center"
+                className="col-icons col-6 col-md-2 mb-3 mb-md-0 "
               >
                 <img src={icon.src} alt={icon.alt} className="m-0 p-0" />
               </div>
@@ -31,13 +31,14 @@ export const AboutMe = () => {
           )}
         </article>
 
-        <article className="row d-flex pt-3 ">
-          <div className="col-12 col-md-6 order-md-2 container-img overflow-hidden py-3">
+        <article className="row-information row d-flex pt-3 ">
+          <div className="col-img col-12 col-md-6 order-md-2 overflow-hidden py-3">
             <figure className="h-100">
               <img src="/imgs/aboutMe/img-about-me.jpg" alt="img-sobre-mi" />
             </figure>
           </div>
-          <div className="col-12 col-md-6 order-md-1 text-start">
+
+          <div className="col-info col-12 col-md-6 order-md-1 text-start">
             <h4 className="">
               <strong>Especialista en medicina familiar</strong>
             </h4>
@@ -57,9 +58,10 @@ export const AboutMe = () => {
               comunidad y en la oportunidad de brindar atención médica de
               calidad a quienes la necesitan.{" "}
             </p>
+
             <div className="row">
-              {advantageMe ? (
-                advantageMe.map((advantage) => (
+              {dataAdvantageMe ? (
+                dataAdvantageMe.map((advantage) => (
                   <div
                     key={advantage.id}
                     className="d-flex m-0 col-12 col-md-6"

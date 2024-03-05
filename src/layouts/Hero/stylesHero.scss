@@ -1,7 +1,7 @@
-@import "../../partials/box-flex";
-@import "../../partials/variables";
+@import "@partials/box-flex";
+@import "@partials/variables";
 
-.my-container-fluid {
+.container-fluid-hero {
   width: 100%;
   min-height: 100vh;
   background-image: url("/imgs/hero/hero-device-desktop.jpg");
@@ -11,7 +11,7 @@
   background-attachment: fixed;
   position: relative;
 
-  .container {
+  .container-hero {
     .layer {
       position: absolute;
       top: 0;

@@ -1,11 +1,11 @@
-@import "../../partials/box-flex";
-@import "../../partials/media-queries";
-@import "../../partials/variables";
+@import "@partials/box-flex";
+@import "@partials/media-queries";
+@import "@partials/variables";
 
 .contaner-fluid-gallery {
-  .container {
-    .row {
-      .container-title-and-subtitle {
+  .container-recognition-gallery {
+    .row-header {
+      .col-title {
         .subtitle {
           color: $main-bg-color;
         }

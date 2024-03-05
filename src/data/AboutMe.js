@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-export const advantageMe = [
+export const dataAdvantageMe = [
   {
     id: uuidv4(),
     title: "Enfoque integral.",
@@ -27,7 +27,7 @@ export const advantageMe = [
   },
 ];
 
-export const iconsAboutMe = [
+export const dataIconsAboutMe = [
   {
     id: uuidv4(),
     src: "/Icons/integral.png",

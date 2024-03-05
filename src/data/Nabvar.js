@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-export const linksNabvar = [
+export const dataLinksNabvar = [
   {
     id: uuidv4(),
     href: "#inicio",

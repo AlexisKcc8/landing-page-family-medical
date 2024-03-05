@@ -1,14 +1,14 @@
-import { socialsMedia } from "../../data/socialMedia";
+import { dataSocialsMedia } from "@data/socialMedia";
 
-export const SocialMedia = (props) => {
+export const ItemsSocialMedia = (props) => {
   let { onlyTheseIcons } = props;
   //si la propiedad viene vacia o de plano no viene, le asignamos un array vacio y renderizara todos los iconos, en caso contrario respetara
   onlyTheseIcons = onlyTheseIcons === undefined ? [] : onlyTheseIcons;
   return (
     <>
-      {socialsMedia ? (
+      {dataSocialsMedia ? (
         onlyTheseIcons.length > 0 ? (
-          socialsMedia.map((icon) =>
+          dataSocialsMedia.map((icon) =>
             [...onlyTheseIcons].includes(icon.title) ? (
               <li className="" key={icon.id} style={{ listStyle: "none" }}>
                 <a href={icon.url} target="_black">
@@ -22,7 +22,7 @@ export const SocialMedia = (props) => {
             ) : null
           )
         ) : (
-          socialsMedia.map((icon) => (
+          dataSocialsMedia.map((icon) => (
             <li key={icon.id}>
               <a href={icon.url} target="_black">
                 <img

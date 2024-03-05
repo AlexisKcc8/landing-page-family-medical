@@ -1,29 +1,29 @@
-import "./stylesRecognitionGallery.scss";
-import { CarouselGallery } from "../../components/carouselGallery/CarouselGallery";
-import { recognitions } from "../../data/galleryRecognition";
+import { CarouselGallery } from "@components/CarouselGallery/CarouselGallery";
+import { dataRecognitions } from "@data/galleryRecognition";
 
+import "./stylesRecognitionGallery.scss";
 export const RecognitionGallery = () => {
   return (
-    <section className="container-fluid contaner-fluid-gallery pt-5">
-      <article className="container">
-        <header className="row">
-          <div className="col-12 container-title-and-subtitle text-center">
+    <section className="contaner-fluid-gallery container-fluid pt-5">
+      <article className="container-recognition-gallery container">
+        <header className="row-header row">
+          <section className="col-title col-12  text-center">
             <p className="m-0 subtitle">
               <strong>Si gustas puedes hecharle un ojo a</strong>
             </p>
             <h2 className=" title">
               <strong>Mis reconocimientos</strong>
             </h2>
-          </div>
+          </section>
         </header>
 
-        <section className="row d-md-none">
-          <div className="col-12">
+        <section className="row-carousel row d-md-none">
+          <article className="col-12">
             <CarouselGallery
-              galleryID={recognitions.galleryID}
-              images={recognitions.images}
+              galleryID={dataRecognitions.galleryID}
+              images={dataRecognitions.images}
             />
-          </div>
+          </article>
         </section>
         {/* <section className="row-gallery-imgs row pswp-gallery" id={galleryID}>
           {images.map((image, index) => (

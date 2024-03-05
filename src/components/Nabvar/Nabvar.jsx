@@ -1,20 +1,20 @@
 import { useRef } from "react";
-import { linksNabvar } from "../../data/Nabvar";
+
+import { dataLinksNabvar } from "@data/Nabvar";
+import { ItemsSocialMedia } from "@components/itemsSocialMedia/ItemsSocialMedia";
+
 import "./stylesNabvar.scss";
-
-import { SocialMedia } from "../SocialMedia/SocialMedia";
-
 export const Nabvar = () => {
   const collapsedMenu = useRef();
   const toggleShowMenu = () => {
     collapsedMenu.current.classList.toggle("show");
   };
   return (
-    <nav className="container-fluid container-fluid-navbar navbar navbar-expand-lg  fixed-top d-lg-flex flex-lg-column py-0">
-      <header className="container-fluid container-social-media-info">
-        <section className="container py-1 p-md-2">
-          <div className="row">
-            <div className="col-12 col-md-6  container-info-open">
+    <nav className="container-fluid-navbar container-fluid  navbar navbar-expand-lg  fixed-top d-lg-flex flex-lg-column py-0">
+      <header className="container-fluid-social-media-info container-fluid ">
+        <section className="container-social-media-info container py-1 p-md-2">
+          <div className="row-info-social-media row">
+            <div className="col-info-schedule col-12 col-md-6">
               <figure className="p-0 figure-clock">
                 <img
                   className=""
@@ -27,9 +27,10 @@ export const Nabvar = () => {
                 pm (previa cita).
               </h6>
             </div>
-            <div className="col-12 col-md-6  container-social-media d-none d-md-block">
+
+            <div className="col-items-social-media col-12 col-md-6 d-none d-md-block">
               <ul className="d-flex m-0 p-0 gap-3 justify-content-center justify-content-md-end  align-items-center">
-                <SocialMedia
+                <ItemsSocialMedia
                   onlyTheseIcons={["facebook", "whatsapp", "gmail"]}
                 />
               </ul>
@@ -38,14 +39,11 @@ export const Nabvar = () => {
         </section>
       </header>
 
-      <section className="container container-navbar-brand-items  h-100 py-2">
-        <a className="navbar-brand  w-50" href="index.html">
+      <section className="container-brand-items-links container h-100 py-2">
+        <a className="brand-navbar navbar-brand  w-50" href="index.html">
           <strong>
-            <span className="" style={{ color: "#3fbbc0" }}>
-              Family
-            </span>
-            Medical
-          </strong>{" "}
+            <span>Family</span>Medical
+          </strong>
           <img src="/Icons/building-hospital.svg" alt="Icon Hospital" />
         </a>
 
@@ -62,16 +60,16 @@ export const Nabvar = () => {
         </button>
 
         <div
-          className="collapse navbar-collapse  w-50 d-lg-flex  justify-content-lg-end"
+          className="navbar-collapse-items collapse navbar-collapse  w-50 d-lg-flex  justify-content-lg-end"
           ref={collapsedMenu}
           id="navbarNavDropdown"
         >
-          <ul className="navbar-nav ">
-            {linksNabvar ? (
-              linksNabvar.map((link) => (
-                <li key={link.id} className="nav-item  text-center">
+          <ul className="list-navbar-items navbar-nav">
+            {dataLinksNabvar ? (
+              dataLinksNabvar.map((link) => (
+                <li key={link.id} className="navbar-item nav-item ">
                   <a
-                    className="nav-link text-dark"
+                    className="nabvar-link nav-link"
                     aria-current="page"
                     href={link.href}
                     onClick={toggleShowMenu}
@@ -83,14 +81,14 @@ export const Nabvar = () => {
             ) : (
               <h3>Datos no encontrados</h3>
             )}
-            <div className="col-12 container-social-media d-md-none">
-              <ul className="d-flex m-0 p-0 gap-3 justify-content-center justify-content-md-end  align-items-center">
-                <SocialMedia
-                  onlyTheseIcons={["facebook", "whatsapp", "gmail"]}
-                />
-              </ul>
-            </div>
           </ul>
+          <div className="col-12 container-social-media d-md-none">
+            <ul className="d-flex m-0 p-0 gap-3 justify-content-center justify-content-md-end  align-items-center">
+              <ItemsSocialMedia
+                onlyTheseIcons={["facebook", "whatsapp", "gmail"]}
+              />
+            </ul>
+          </div>
         </div>
       </section>
     </nav>

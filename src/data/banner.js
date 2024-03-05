@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-export const iconBanner = [
+export const dataIconBanner = [
   {
     id: uuidv4(),
     icon: "/Icons/paciente.png",

@@ -1,12 +1,23 @@
-@import "../../partials/box-flex";
+@import "@partials/box-flex";
+@import "@partials/variables";
 
-.container-fluid {
+.container-fluid-about-me {
 
-  .container {
-    .row {
+  .container-about-me {
+    text-align: center;
+
+    .row-header {
       overflow: hidden;
 
-      .container-img {
+      .subtitle {
+        color: $main-bg-color
+      }
+    }
+
+    .row-icons {}
+
+    .row-information {
+      .col-img {
         @include box-flex;
 
         figure {
@@ -22,6 +33,8 @@
           }
         }
       }
+
+      .col-info {}
     }
   }
 }

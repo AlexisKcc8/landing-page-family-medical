@@ -1,12 +1,12 @@
-import { iconBanner } from "../../data/banner";
+import { dataIconBanner } from "@data/banner";
 import "./styleBanner.scss";
 export const Banner = () => {
   return (
     <section className="container-fluid container-fluid-banner">
       <article className="container p-0 overflow-hidden">
         <div className="row py-3">
-          {iconBanner ? (
-            iconBanner.map((item) => (
+          {dataIconBanner ? (
+            dataIconBanner.map((item) => (
               <div key={item.id} className="col-12 col-md-3 item-banner">
                 <div className="card-item-banner" data-wow-delay="0.2s">
                   <div className="content">

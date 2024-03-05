@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-export const socialsMedia = [
+export const dataSocialsMedia = [
   {
     id: uuidv4(),
     icon: "/Icons/icon-facebook.svg",

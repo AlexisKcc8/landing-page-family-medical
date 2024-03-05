@@ -1,10 +1,9 @@
 import "./App.css";
-import { Banner } from "./components/Banner/Banner";
-import { Nabvar } from "./components/Nabvar/Nabvar";
-import { RecognitionGallery } from "./layouts/RecognitionGallery/RecognitionGallery";
-
-import { AboutMe } from "./layouts/AboutMe/AboutMe";
-import { Hero } from "./layouts/Hero/Hero";
+import { Nabvar } from "@components/Nabvar/Nabvar";
+import { Hero } from "@layouts/Hero/Hero";
+import { AboutMe } from "@layouts/AboutMe/AboutMe";
+import { Banner } from "@components/Banner/Banner";
+import { RecognitionGallery } from "@layouts/RecognitionGallery/RecognitionGallery";
 
 function App() {
   return (
@@ -16,92 +15,6 @@ function App() {
         <Banner />
         <RecognitionGallery />
       </main>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <br />
       <br />
       <br />
