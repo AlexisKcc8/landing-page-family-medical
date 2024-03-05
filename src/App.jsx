@@ -1,8 +1,8 @@
 import "./App.css";
 import { Banner } from "./components/Banner/Banner";
 import { Nabvar } from "./components/Nabvar/Nabvar";
-import { RecognitionGallery } from "./components/RecognitionGallery/RecognitionGallery";
-import { recognitions } from "./data/galleryRecognition";
+import { RecognitionGallery } from "./layouts/RecognitionGallery/RecognitionGallery";
+
 import { AboutMe } from "./layouts/AboutMe/AboutMe";
 import { Hero } from "./layouts/Hero/Hero";
 
@@ -14,10 +14,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Banner />
-        <RecognitionGallery
-          galleryID={recognitions.galleryID}
-          images={recognitions.images}
-        />
+        <RecognitionGallery />
       </main>
       <br />
       <br />
