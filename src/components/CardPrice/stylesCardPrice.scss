@@ -27,7 +27,14 @@
   .header-card {
     overflow: hidden;
 
+    @include querie-compu {
+      height: 13rem;
+
+    }
+
     img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
 
       transition: transform .3s ease-in-out;

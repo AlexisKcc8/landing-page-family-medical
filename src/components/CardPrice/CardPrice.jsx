@@ -10,7 +10,7 @@ export const CardPrice = (props) => {
   return services.length > 0 ? (
     <div className="container-card ">
       <header className="header-card">
-        <img src={img} className="w-100 h-100" alt="..." />
+        <img src={img} className=" " alt={`imagen-${title}`} />
       </header>
       <div className="body-card">
         <p className="card-price m-0">
