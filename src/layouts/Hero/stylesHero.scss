@@ -37,6 +37,15 @@
           }
         }
 
+        .title-brand {
+          strong {
+            span {
+
+              color: $secondary-bg-color;
+            }
+          }
+        }
+
         .title {
           font-size: 2rem;
           color: $secondary-bg-color;

@@ -1,0 +1,103 @@
+@import "@partials/box-flex";
+@import "@partials/media-queries";
+@import "@partials/variables";
+
+.container-card {
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  background: rgba(255, 255, 255, 0.53);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.6px);
+  -webkit-backdrop-filter: blur(15.6px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @include querie-compu {
+    width: 90%;
+  }
+
+  .header-card {
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+
+      transition: transform .3s ease-in-out;
+
+    }
+  }
+
+  .body-card {
+    flex-grow: 2;
+    padding: 1.5rem;
+
+    .card-price {
+      color: $main-bg-color;
+    }
+
+    .title-card {
+      color: #000000;
+      margin: .5rem 0;
+    }
+
+    .list-services {
+      list-style: none;
+      padding: 0;
+      color: #808080;
+      transition: color .3s ease-in-out;
+
+      .list-item {
+        margin: 0.2rem 0;
+        padding: 0;
+        overflow: hidden;
+
+        .icon-check {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+
+  .footer-card {
+    border-top: 1px solid rgb(226, 223, 223);
+    @include box-flex;
+    padding: .5rem 0;
+
+    .btn-message {
+      // background-color: $main-bg-color ;
+      border: 3px solid $main-bg-color;
+      font-weight: bold;
+      color: $main-bg-color;
+    }
+  }
+}
+
+.container-card:hover .header-card img {
+  transform: scale(1.1);
+  transition: transform .3s ease-in-out;
+}
+
+.container-card:hover .body-card .title-card {
+  color: $main-bg-color;
+  transition: transform .3s ease-in-out;
+}
+
+.container-card:hover .body-card .list-services {
+  color: #000;
+  transition: color .3s ease-in-out;
+}
+
+.container-card:hover .footer-card .btn-message {
+  color: #000;
+  background-color: $secondary-bg-color-10;
+  transition: color .3s ease-in-out;
+}

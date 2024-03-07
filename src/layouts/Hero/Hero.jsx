@@ -14,9 +14,9 @@ export const Hero = () => {
                     alt=""
                   />
                 </figure>
-                <h2>
+                <h2 className="title-brand">
                   <strong>
-                    <span style={{ color: "#00ffd9" }}>Family</span>Medical
+                    <span>Family</span>Medical
                   </strong>
                 </h2>
                 <h2 className="title">Dr. ADRIAN FUENTES</h2>

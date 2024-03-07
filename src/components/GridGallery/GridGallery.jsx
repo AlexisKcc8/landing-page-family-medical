@@ -22,7 +22,7 @@ export const GridGallery = (props) => {
     <section className="row-grid-gallery  row pswp-gallery " id={galleryID}>
       {images.map((image, index) => (
         <div
-          className="container-img-gallery col-4 mb-3"
+          className="container-img-gallery col-3 mb-3"
           key={galleryID + "-" + index}
         >
           <a
