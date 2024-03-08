@@ -3,6 +3,9 @@ import { v4 as uuidv4 } from "uuid";
 export const dataServices = [
   {
     id: uuidv4(),
+    // imagenWebp: "/imgs/my-services/img-cita-normal.webp",
+    // imagenAvif: "/imgs/my-services/img-cita-normal.avif",
+    // imagenJpg: "/imgs/my-services/img-cita-normal.jpg",
     title: "Asesoría médica en línea",
     description:
       "Obtén orientación médica confiable desde la comodidad de tu hogar con nuestras consultas médicas en línea. Estare disponible para abordar tus preocupaciones, responder a tus preguntas y ofrecerte recomendaciones personalizadas para mejorar tu bienestar. ",
@@ -11,6 +14,9 @@ export const dataServices = [
   },
   {
     id: uuidv4(),
+    imagenWebp: "/imgs/my-services/img-orden-laboratorio-phone.webp",
+    imagenAvif: "/imgs/my-services/img-orden-laboratorio-phone.avif",
+    imagenJpg: "/imgs/my-services/img-orden-laboratorio-phone.jpg",
     title: "Envío de Orden de Laboratorio",
     description:
       "Simplifica el proceso de obtención de pruebas médicas con nuestro servicio de envío de órdenes de laboratorio. Una vez que hayas consultado, podrás recibir una orden de laboratorio electrónica directamente en tu correo electrónico.",
@@ -19,6 +25,9 @@ export const dataServices = [
   },
   {
     id: uuidv4(),
+    imagenWebp: "/imgs/my-services/img-tratamiento-phone.webp",
+    imagenAvif: "/imgs/my-services/img-tratamiento-phone.avif",
+    imagenJpg: "/imgs/my-services/img-tratamiento-phone.jpg",
     title: "Tratamiento",
     description:
       "Recibe atención médica personalizada y tratamientos efectivos en nuestra clínica. Te ofrecemos una amplia gama de opciones de tratamiento para abordar tus necesidades de salud de manera integral.",
@@ -51,6 +60,9 @@ export const dataServices = [
   },
   {
     id: uuidv4(),
+    imagenWebp: "/imgs/my-services/img-signos-vitales-phone.webp",
+    imagenAvif: "/imgs/my-services/img-signos-vitales-phone.avif",
+    imagenJpg: "/imgs/my-services/img-signos-vitales-phone.jpg",
     title: "Toma de Signos Vitales",
     description:
       "La toma de signos vitales es una parte fundamental de cualquier evaluación médica. Nuestro personal capacitado llevará a cabo mediciones precisas de tus signos vitales, que incluyen la presión arterial, la frecuencia cardíaca, la temperatura y la saturación de oxígeno, entre otros, para obtener una imagen completa de tu salud en ese momento. ",
@@ -59,6 +71,9 @@ export const dataServices = [
   },
   {
     id: uuidv4(),
+    imagenWebp: "/imgs/my-services/img-cita-normal.webp",
+    imagenAvif: "/imgs/my-services/img-cita-normal.avif",
+    imagenJpg: "/imgs/my-services/img-cita-normal.jpg",
     title: "Consulta Normal - $300 MXN (Horario de 4pm a 8pm)",
     description:
       "Nuestras consultas normales te ofrecen la oportunidad de recibir atención médica en nuestro consultorio durante las tardes. Te brindaremos una evaluación completa de tus síntomas y preocupaciones de salud, junto con recomendaciones y orientación personalizadas para tu bienestar. ",

@@ -1,0 +1,32 @@
+@import "@partials/box-flex";
+@import "@partials/media-queries";
+@import "@partials/variables";
+
+.container-fluid-services {
+  background-color: $color-bluish-white;
+
+  .container-services {
+    .row-header-services {
+      .subtitle {
+        color: red
+      }
+
+      .title {
+        margin: 0 0 1rem 0;
+        color: #000;
+      }
+    }
+
+    .row-grid-services {
+
+      .col-card-service {
+        @include querie-compu {
+          min-height: 15rem;
+          max-height: 19rem;
+          background-color: red;
+        }
+      }
+    }
+
+  }
+}

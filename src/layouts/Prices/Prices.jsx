@@ -12,7 +12,7 @@ export const Prices = () => {
       id="prices"
       className="container-fluid-prices container-fluid min-vh-100 "
     >
-      <article className="container-prices container pt-5">
+      <article className="container-prices container">
         <header className="row-header row text-center">
           <p className="m-0 subtitle">
             <strong>

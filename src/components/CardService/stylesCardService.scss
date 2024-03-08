@@ -1,0 +1,18 @@
+@import "@partials/box-flex";
+@import "@partials/media-queries";
+@import "@partials/variables";
+
+.container-card-service {
+  .row-card-service {
+    .picture-img-service {}
+
+    .col-info {
+      .body-card {
+        .title-card {
+          font-weight: bold;
+          color: #000;
+        }
+      }
+    }
+  }
+}
