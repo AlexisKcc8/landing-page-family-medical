@@ -21,7 +21,7 @@ export const CardService = (props) => {
   bgColor = bgColor !== undefined ? bgColor : "#fff";
   return (
     <div className="container-card-service card h-100  rounded-0 border-0">
-      <div className="row-card-service row g-0 h-100 ">
+      <div className="row-card-service row g-0 h-100 overflow-hidden">
         <picture
           className={`picture-img-service col-md-6 order-md-${
             orderId[0] > 1 ? orderId[0] : 1

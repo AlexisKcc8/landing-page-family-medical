@@ -4,14 +4,12 @@ export const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className="container-fluid container-fluid-about-me min-vh-100 overflow-hidden pt-5"
+      className="container-fluid container-fluid-about-me min-vh-100 overflow-hidden"
     >
-      <section className="container-about-me container overflow-hidden">
+      <section className="container-about-me container overflow-hidden py-4">
         <header className="row-header row">
-          <p className="m-0 subtitle">
-            <strong>Conoce un poco sobre mi</strong>
-          </p>
-          <h3 className="m-0">
+          <p className="m-0 subtitle-section">Conoce un poco sobre mi</p>
+          <h3 className="m-0 title-section">
             <strong>Descubre quién está detrás del sitio.</strong>
           </h3>
         </header>

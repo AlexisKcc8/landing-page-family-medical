@@ -5,14 +5,14 @@ import { dataRecognitions } from "@data/galleryRecognition";
 import "./stylesRecognitionGallery.scss";
 export const RecognitionGallery = () => {
   return (
-    <section className="contaner-fluid-gallery container-fluid pt-5">
-      <article className="container-recognition-gallery container">
+    <section className="contaner-fluid-gallery container-fluid">
+      <article className="container-recognition-gallery container py-4">
         <header className="row-header row">
           <section className="col-title col-12  text-center">
-            <p className="m-0 subtitle">
-              <strong>Si gustas puedes hecharle un ojo a</strong>
+            <p className="m-0 subtitle-section">
+              Si gustas puedes hecharle un ojo a
             </p>
-            <h2 className="title m-0 p-0">
+            <h2 className="title-section m-0 p-0">
               <strong>Mis reconocimientos</strong>
             </h2>
             <p className="note">

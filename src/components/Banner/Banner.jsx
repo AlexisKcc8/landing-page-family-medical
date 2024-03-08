@@ -3,7 +3,7 @@ import "./styleBanner.scss";
 export const Banner = () => {
   return (
     <section className="container-fluid container-fluid-banner">
-      <article className="container p-0 overflow-hidden">
+      <article className="container overflow-hidden">
         <div className="row py-3">
           {dataIconBanner ? (
             dataIconBanner.map((item) => (

@@ -1,3 +1,7 @@
+@import "@partials/box-flex";
+@import "@partials/media-queries";
+@import "@partials/variables";
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
@@ -14,6 +18,10 @@ section[id] {
   scroll-margin-top: calc(var(--height-header-and-margin-sections) + 1rem);
 }
 
-.subtitle {
-  color: red;
+.title-section {
+  color: #000;
+}
+
+.subtitle-section {
+  color: $main-bg-color;
 }
