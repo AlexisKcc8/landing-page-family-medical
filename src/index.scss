@@ -10,7 +10,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --height-header-and-margin-sections: 3rem;
+  --height-header-and-margin-sections: 5rem;
 }
 
 header,
@@ -27,7 +27,12 @@ main {
 }
 
 section[id] {
-  scroll-margin-top: calc(var(--height-header-and-margin-sections) + 1rem);
+  scroll-margin-top: calc(var(--height-header-and-margin-sections) + 2rem);
+
+  @include querie-compu {
+
+    scroll-margin-top: calc(var(--height-header-and-margin-sections) + 3rem);
+  }
 }
 
 .title-section {

@@ -3,12 +3,12 @@ import { v4 as uuidv4 } from "uuid";
 export const dataLinksNabvar = [
   {
     id: uuidv4(),
-    href: "#inicio",
+    href: "#home",
     title: "Inicio",
   },
   {
     id: uuidv4(),
-    href: "#servicios",
+    href: "#services",
     title: "Servicios",
   },
   {
@@ -23,7 +23,7 @@ export const dataLinksNabvar = [
   },
   {
     id: uuidv4(),
-    href: "#Preciós",
+    href: "#prices",
     title: "Preciós",
   },
 ];

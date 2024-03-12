@@ -1,7 +1,7 @@
 import "./stylesHero.scss";
 export const Hero = () => {
   return (
-    <section className="container-fluid-hero container-fluid" id="inicio">
+    <section className="container-fluid-hero container-fluid" id="home">
       <article className="container-hero container ">
         <div className="layer">
           <section className="container min-vh-100 ">
