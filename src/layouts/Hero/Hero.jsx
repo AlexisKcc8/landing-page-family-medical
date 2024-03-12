@@ -11,7 +11,7 @@ export const Hero = () => {
                   <img
                     className="m-0"
                     src="/imgs/logo-family-medical.png"
-                    alt=""
+                    alt="Logo-family-medical"
                   />
                 </figure>
                 <h2 className="title-brand">

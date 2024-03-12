@@ -32,7 +32,12 @@ export const GridGallery = (props) => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={image.srcImgWebp} alt="" />
+            <picture>
+              <source srcSet={image.srcImgAvif} alt={`imagen-${image.title}`} />
+              <source srcSet={image.srcImgWebp} alt={`imagen-${image.title}`} />
+
+              <img src={image.srcImgJpg} alt={`imagen-${image.title}`} />
+            </picture>
           </a>
         </div>
       ))}
