@@ -8,7 +8,7 @@ export const AboutMe = () => {
     >
       <section className="container-about-me container overflow-hidden py-4">
         <header className="row-header row">
-          <p className="m-0 subtitle-section">Conoce un poco sobre mi</p>
+          <p className="m-0 subtitle-section">Conoce un poco sobre mi y</p>
           <h3 className="m-0 title-section">
             <strong>Descubre quién está detrás del sitio.</strong>
           </h3>
