@@ -9,7 +9,9 @@ import { MyServices } from "@layouts/MyServices/MyServices";
 function App() {
   return (
     <>
-      <Nabvar />
+      <header>
+        <Nabvar />
+      </header>
       <main>
         <Hero />
         <AboutMe />

@@ -39,7 +39,7 @@ export const MyServices = () => {
           <article className="col-12 col-lg-6 p-0 mb-3 mb-lg-0">
             <CardService
               data={{
-                bgColor: "#3fbbc0",
+                bgColor: "#d6e4f0",
                 service: getSpecificService(dataServices, 2),
               }}
             />
@@ -48,6 +48,7 @@ export const MyServices = () => {
             <CardService
               data={{
                 orderWiewInfo: [2, 1],
+
                 service: getSpecificService(dataServices, 6),
               }}
             />
