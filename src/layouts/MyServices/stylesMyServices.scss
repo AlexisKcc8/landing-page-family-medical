@@ -18,6 +18,10 @@
     }
 
     .row-grid-services {
+      @include querie-compu {
+
+        padding: 0 4.5rem;
+      }
 
       .col-card-service {
         @include querie-compu {

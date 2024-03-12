@@ -20,7 +20,7 @@ export const MyServices = () => {
           </h2>
         </header>
 
-        <section className="row-grid-services row px-lg-5 ">
+        <section className="row-grid-services row  ">
           <article className="col-12 p-0  col-card-service mb-3 mb-lg-0">
             <CardService
               data={{
