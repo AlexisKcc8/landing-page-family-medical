@@ -30,13 +30,13 @@ export const AboutMe = () => {
         </article>
 
         <article className="row-information row d-flex pt-3 ">
-          <div className="col-img col-12 col-md-6 order-md-2 overflow-hidden py-3">
+          <div className="col-img col-12 col-lg-6 order-md-2 overflow-hidden py-3">
             <figure className="h-100">
               <img src="/imgs/aboutMe/img-about-me.jpg" alt="img-sobre-mi" />
             </figure>
           </div>
 
-          <div className="col-info col-12 col-md-6 order-md-1 text-start">
+          <div className="col-info col-12 col-lg-6 order-md-1 text-start">
             <h4 className="">
               <strong>Especialista en medicina familiar</strong>
             </h4>

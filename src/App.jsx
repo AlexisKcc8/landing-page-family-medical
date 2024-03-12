@@ -18,6 +18,16 @@ function App() {
         <MyServices />
         <Prices />
       </main>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

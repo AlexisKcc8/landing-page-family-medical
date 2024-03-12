@@ -3,18 +3,10 @@
 @import "@partials/variables";
 
 .container-card {
+  font-size: 1.6rem;
+  border-radius: .5em;
 
-  &:hover {
-    cursor: pointer;
-  }
-
-  background: rgba(255, 255, 255, 0.53);
-
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15.6px);
-  -webkit-backdrop-filter: blur(15.6px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-
+  border: 2px solid #e4edf4;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -24,47 +16,56 @@
     width: 90%;
   }
 
-  .header-card {
-    overflow: hidden;
-
-    @include querie-compu {
-      height: 13rem;
-
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-
-      transition: transform .3s ease-in-out;
-
-    }
-  }
-
   .body-card {
     flex-grow: 2;
-    padding: 1.5rem;
+    padding: 1em;
 
-    .card-price {
-      color: $main-bg-color;
+    @include querie-compu {
+      padding: 1.5em;
     }
 
     .title-card {
-      color: #000000;
-      margin: .5rem 0;
+      font-size: .75em;
+      font-weight: 700;
+      margin: .5em 0;
+
+    }
+
+    .description-card {
+      font-size: .6em;
+    }
+
+    .card-price {
+
+      font-size: 1.6em;
+    }
+
+
+    .btn-contact:hover {
+      transition: background-color .3s ease-in-out;
+
+      &:hover {
+        background-color: $blue-light !important;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+      }
+
+    }
+
+    .included {
+      font-size: .65em;
+      font-weight: 600;
     }
 
     .list-services {
       list-style: none;
       padding: 0;
-      color: #808080;
-      transition: color .3s ease-in-out;
 
       .list-item {
-        margin: 0.2rem 0;
+        margin: 0.2em 0;
         padding: 0;
         overflow: hidden;
+        font-size: .6em;
 
         .icon-check {
           width: 2rem;
@@ -73,38 +74,16 @@
       }
     }
   }
-
-  .footer-card {
-    border-top: 1px solid rgb(226, 223, 223);
-    @include box-flex;
-    padding: .5rem 0;
-
-    .btn-message {
-      // background-color: $main-bg-color ;
-      border: 3px solid $main-bg-color;
-      font-weight: bold;
-      color: $main-bg-color;
-    }
-  }
 }
 
-.container-card:hover .header-card img {
-  transform: scale(1.1);
-  transition: transform .3s ease-in-out;
-}
-
-.container-card:hover .body-card .title-card {
-  color: $main-bg-color;
-  transition: transform .3s ease-in-out;
-}
-
-.container-card:hover .body-card .list-services {
+.bg-card-light {
+  background-color: #fff;
+  background: linear-gradient(0deg, #e4edf4 0%, #fcfcfc 70%);
   color: #000;
-  transition: color .3s ease-in-out;
 }
 
-.container-card:hover .footer-card .btn-message {
-  color: #000;
-  background-color: $secondary-bg-color-10;
-  transition: color .3s ease-in-out;
+.bg-card-dark {
+  background-color: $blue-dark;
+  background: linear-gradient(0deg, #ffffff 0%, $blue-dark 0%);
+  color: #fff;
 }
