@@ -20,48 +20,51 @@ export const CardService = (props) => {
   orderId = orderId !== undefined ? orderId : [1, 1];
   bgColor = bgColor !== undefined ? bgColor : "#fff";
   return (
-    <div className="container-card-service card h-100  rounded-0 border-0">
-      <div className="row-card-service row g-0 h-100 overflow-hidden">
-        <picture
-          className={`picture-img-service col-md-6 order-md-${
+    <article className="container-card-service card h-100  rounded-0 border-0">
+      <section className="row-card-service row g-0 h-100 ">
+        <aside
+          className={`col-img-service col-md-6 order-md-${
             orderId[0] > 1 ? orderId[0] : 1
           }`}
         >
-          <source
-            className="img-fluid w-100 h-100"
-            type="image/avif"
-            srcSet={imagenAvif}
-          />
-          <source
-            className="img-fluid w-100 h-100"
-            type="image/webp"
-            srcSet={imagenWebp}
-          />
-
-          <source />
-          <img
-            src={imagenJpg}
-            className="img-fluid w-100 h-100"
-            alt={`imagen-${title}`}
-          />
-        </picture>
-        <div
+          <div className="layer-img-service">
+            <picture className="picture-img-service">
+              <source
+                className="img-service"
+                type="image/avif"
+                srcSet={imagenAvif}
+              />
+              <source
+                className="img-service"
+                type="image/webp"
+                srcSet={imagenWebp}
+              />
+              <img
+                src={imagenJpg}
+                className="img-service"
+                alt={`imagen-${title}`}
+              />
+              <div className="layer"></div>
+            </picture>
+          </div>
+        </aside>
+        <aside
           className={`col-info col-md-6 order-${
             orderId[0] > 1 ? orderId[1] : 1
-          } p-3`}
+          } p-3 ${bgColor !== "#fff" ? "text-white" : ""}`}
           style={{ backgroundColor: `${bgColor}` }}
         >
           <div className="body-card card-body ">
             <h5 className="title-card">{title}</h5>
             <p className="text-card">{description}</p>
             <p className="text-card">
-              <small className="text-body-secondary">
+              <small className="">
                 Incluida en el paquete: {packageBelongs}
               </small>
             </p>
           </div>
-        </div>
-      </div>
-    </div>
+        </aside>
+      </section>
+    </article>
   );
 };

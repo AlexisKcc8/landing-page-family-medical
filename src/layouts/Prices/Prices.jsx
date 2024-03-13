@@ -40,7 +40,7 @@ export const Prices = () => {
               data={{
                 title: "Paquete 3: Consulta a domicilio",
                 description:
-                  "Creado para proporcionarle atención médica de calidad sin la molestia de desplazarse a una clínica u hospital. Estaremos encantados de visitarlo en la comodidad de su hogar",
+                  "Creado para proporcionarle atención médica de calidad sin la molestia de desplazarse a una clínica u hospital. Estaremos encantados de visitarlo en la comodidad de su hogar.",
                 isDark: true,
                 price: "Personalizado",
                 services: filterServicesByPackage(dataServices, 3),
