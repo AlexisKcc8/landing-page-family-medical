@@ -6,8 +6,8 @@ import "./stylesRecognitionGallery.scss";
 export const RecognitionGallery = () => {
   return (
     <section className="contaner-fluid-gallery container-fluid">
-      <article className="container-recognition-gallery container py-4">
-        <header className="row-header row">
+      <article className="container-recognition-gallery container  px-lg-5">
+        <header className="row-header row ">
           <section className="col-title col-12  text-center">
             <p className="m-0 subtitle-section">
               Si gustas puedes hecharle un ojo a
@@ -31,7 +31,7 @@ export const RecognitionGallery = () => {
           </article>
         </section>
 
-        <section className="container d-none d-md-block">
+        <section className="container py-0 d-none d-md-block">
           <GridGallery
             galleryID={dataRecognitions.galleryID}
             images={dataRecognitions.images}

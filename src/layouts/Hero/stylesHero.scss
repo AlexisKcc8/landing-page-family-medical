@@ -33,7 +33,7 @@
           @include box-flex;
 
           @include querie-compu {
-            width: 18rem;
+            width: 19rem;
           }
 
           img {
@@ -44,6 +44,8 @@
         }
 
         .title-brand {
+          text-shadow: 1px 1px 1px #000000;
+
           @include querie-compu {
             font-size: 2.2rem;
           }
@@ -59,14 +61,16 @@
           font-size: 1.7rem;
           color: $secondary-bg-color;
           font-weight: 700;
+          text-shadow: 1px 1px 1px #000000;
 
           @include querie-compu {
-            font-size: 2.8rem;
+            font-size: 2.9rem;
           }
         }
 
         .subtitle {
           font-size: 1.5rem;
+          text-shadow: 1px 1px 1px #000000;
 
           @include querie-compu {
             font-size: 2rem;
@@ -75,8 +79,12 @@
 
         .description {
           font-size: 1.1rem;
+          text-shadow: 1px 1px 1px #000000;
+          /* offsetX, offsetY, blurRadius, color */
+
 
           @include querie-compu {
+            width: 70%;
             font-size: 1.8rem;
           }
 

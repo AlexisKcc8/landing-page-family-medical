@@ -2,9 +2,9 @@ import "./stylesHero.scss";
 export const Hero = () => {
   return (
     <section className="container-fluid-hero container-fluid" id="home">
-      <article className="container-hero container ">
+      <article className="container-hero container py-0 m-0">
         <div className="layer">
-          <section className="container min-vh-100 ">
+          <section className="container py-0 min-vh-100 ">
             <div className="row min-vh-100">
               <div className="col-12 container-content ">
                 <figure className="figure-logo m-0 mt-5">

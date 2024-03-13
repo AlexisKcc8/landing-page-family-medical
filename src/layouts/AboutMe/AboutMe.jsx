@@ -6,12 +6,12 @@ export const AboutMe = () => {
       id="about-me"
       className="container-fluid container-fluid-about-me min-vh-100 overflow-hidden"
     >
-      <section className="container-about-me container overflow-hidden py-4">
-        <header className="row-header row">
+      <section className="container-about-me container overflow-hidden px-lg-5">
+        <header className="row-header row ">
           <p className="m-0 subtitle-section">Conoce un poco sobre mi y</p>
-          <h3 className="m-0 title-section">
+          <h2 className="m-0 p-0 title-section">
             <strong>Descubre quién está detrás del sitio.</strong>
-          </h3>
+          </h2>
         </header>
 
         <article className="row-icons row py-3">
@@ -36,7 +36,7 @@ export const AboutMe = () => {
             </figure>
           </div>
 
-          <div className="col-info col-12 col-lg-6 order-md-1 text-start">
+          <div className="col-info col-12 col-lg-6 order-md-1 text-start p-lg-4">
             <h4 className="">
               <strong>Especialista en medicina familiar</strong>
             </h4>

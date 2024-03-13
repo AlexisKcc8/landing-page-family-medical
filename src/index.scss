@@ -35,10 +35,23 @@ section[id] {
   }
 }
 
+.container {
+  padding: 4rem 0;
+}
+
+.row-header {
+  margin: 0 0 1rem 0;
+}
+
 .title-section {
-  color: #000;
+
+  color: $main-bg-color;
 }
 
 .subtitle-section {
-  color: $main-bg-color;
+
+  @include querie-compu {
+
+    font-size: 1.5rem;
+  }
 }

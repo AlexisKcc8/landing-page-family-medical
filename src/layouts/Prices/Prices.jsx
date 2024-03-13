@@ -12,13 +12,13 @@ export const Prices = () => {
       id="prices"
       className="container-fluid-prices container-fluid min-vh-100 "
     >
-      <article className="container-prices container py-4">
+      <article className="container-prices container">
         <header className="row-header row text-center">
-          <p className="m-0 subtitle-section">Nuevos paquetes</p>
+          <p className="m-0 subtitle-section">
+            Elaboramos nuevos paquetes para que puedas
+          </p>
           <h2 className="title-section m-0 p-0">
-            <strong>
-              Se el primero en aprovechar nuestros nuevos precios.
-            </strong>
+            <strong>Aprovechar nuestros nuevos precios.</strong>
           </h2>
         </header>
 

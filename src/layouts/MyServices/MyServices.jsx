@@ -12,10 +12,10 @@ export const MyServices = () => {
       id="services"
       className="container-fluid-services container-fluid min-vh-100 "
     >
-      <article className="container-services container  py-4">
-        <header className="row-header-services row text-center ">
+      <article className="container-services container">
+        <header className="row-header row text-center ">
           <p className="subtitle-section m-0">Te ofrecemos siempre</p>
-          <h2 className="title-section  p-0">
+          <h2 className="title-section m-0 p-0">
             <strong>Servicios confiables y de la mejor calidad.</strong>
           </h2>
         </header>
