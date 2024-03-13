@@ -36,8 +36,12 @@
     }
 
     .card-price {
+      font-size: 1.4em;
 
-      font-size: 1.6em;
+      @include querie-compu {
+        font-size: 1.6em;
+      }
+
     }
 
 

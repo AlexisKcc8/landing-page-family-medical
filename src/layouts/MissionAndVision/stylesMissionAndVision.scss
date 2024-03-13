@@ -1,0 +1,59 @@
+@import "@partials/box-flex";
+@import "@partials/media-queries";
+@import "@partials/variables";
+
+.container-fluid-mission-and-vision {
+  .row-mission-and-vision {
+    color: $java-100;
+
+    .col-mission {
+      background-color: $java-600;
+    }
+
+    .col-vision {
+      background-color: $java-700;
+    }
+  }
+}
+
+.title-mission,
+.title-vision {
+  transition: font-weight .3s ease;
+
+  @include querie-compu {
+
+    font-size: 2rem;
+  }
+}
+
+.description-mission,
+.description-vision {
+  @include querie-compu {
+
+    font-size: 1.2rem;
+  }
+}
+
+.col-mission:hover {
+  cursor: pointer;
+
+  color: #fff;
+
+  .title-mission {
+
+    font-weight: bold;
+    transition: font-weight .3s ease;
+  }
+}
+
+.col-vision:hover {
+  cursor: pointer;
+
+  color: #fff;
+
+  .title-vision {
+
+    font-weight: bold;
+    transition: font-weight .3s ease;
+  }
+}

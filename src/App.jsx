@@ -1,5 +1,6 @@
 import { Nabvar } from "@components/Nabvar/Nabvar";
 import { Hero } from "@layouts/Hero/Hero";
+import { MissionAndVision } from "@layouts/MissionAndVision/MissionAndVision";
 import { AboutMe } from "@layouts/AboutMe/AboutMe";
 import { Banner } from "@components/Banner/Banner";
 import { RecognitionGallery } from "@layouts/RecognitionGallery/RecognitionGallery";
@@ -14,6 +15,7 @@ function App() {
       </header>
       <main>
         <Hero />
+        <MissionAndVision />
         <AboutMe />
         <Banner />
         <RecognitionGallery />

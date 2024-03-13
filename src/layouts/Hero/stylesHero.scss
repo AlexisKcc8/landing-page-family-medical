@@ -20,7 +20,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #000000b8;
+      background-color: #0000008a;
 
       .container-content {
         @include box-flex($direction: column);
@@ -52,19 +52,19 @@
 
           strong {
             span {
-              color: $secondary-bg-color;
+              color: $java-bright;
             }
           }
         }
 
         .title {
-          font-size: 1.7rem;
-          color: $secondary-bg-color;
+          font-size: 1.9rem;
+          color: $java-bright;
           font-weight: 700;
           text-shadow: 1px 1px 1px #000000;
 
           @include querie-compu {
-            font-size: 2.9rem;
+            font-size: 4.3rem;
           }
         }
 
@@ -73,19 +73,19 @@
           text-shadow: 1px 1px 1px #000000;
 
           @include querie-compu {
-            font-size: 2rem;
+            font-size: 2.5rem;
           }
         }
 
         .description {
           font-size: 1.1rem;
-          text-shadow: 1px 1px 1px #000000;
-          /* offsetX, offsetY, blurRadius, color */
+          color: $java-50;
 
+          text-shadow: 1px 1px 1px #000000;
 
           @include querie-compu {
-            width: 70%;
-            font-size: 1.8rem;
+            width: 60%;
+            font-size: 1.7rem;
           }
 
         }

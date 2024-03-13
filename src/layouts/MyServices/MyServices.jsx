@@ -21,7 +21,7 @@ export const MyServices = () => {
         </header>
 
         <section className="row-grid-services row  ">
-          <article className="col-12 p-0  col-card-service mb-3 mb-lg-0">
+          <article className="col-12 p-0  mb-3 mb-lg-0">
             <CardService
               data={{
                 service: getSpecificService(dataServices, 7),
@@ -31,7 +31,7 @@ export const MyServices = () => {
           <article className="col-12 col-lg-6 p-0 mb-3 mb-lg-0">
             <CardService
               data={{
-                bgColor: "#143138",
+                bgColor: "#1b544f",
                 service: getSpecificService(dataServices, 1),
               }}
             />
@@ -39,12 +39,12 @@ export const MyServices = () => {
           <article className="col-12 col-lg-6 p-0 mb-3 mb-lg-0">
             <CardService
               data={{
-                bgColor: "#295961",
+                bgColor: "#1c6961",
                 service: getSpecificService(dataServices, 2),
               }}
             />
           </article>
-          <article className="col-12 p-0 col-card-service mb-3 mb-lg-0">
+          <article className="col-12 p-0 mb-3 mb-lg-0">
             <CardService
               data={{
                 orderWiewInfo: [2, 1],
