@@ -2,23 +2,24 @@
 @import "@partials/media-queries";
 @import "@partials/variables";
 
-.contaner-fluid-gallery {
-  .container-recognition-gallery {
-    .row-header {
-      .col-title {
-        .subtitle {
-          color: $main-bg-color;
+.container-fluid-recognition {
+  .container-recognition {
+    .row-recognition {
+      .col-info {
+        position: relative;
+
+        .content-info {
+          text-align: center;
+
+          @include querie-compu {
+            text-align: start;
+            position: sticky;
+            top: 10rem;
+            left: 0;
+
+          }
         }
 
-        .title {
-          font-size: 1.8rem;
-          margin: 0 0 1rem 0;
-        }
-
-        .note {
-          font-size: .75rem;
-          color: $color-gray;
-        }
       }
     }
   }
