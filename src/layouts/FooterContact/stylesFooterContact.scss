@@ -1,0 +1,136 @@
+@import "@partials/box-flex";
+@import "@partials/variables";
+@import "@partials/media-queries";
+
+.container-fluid-footer-contact {
+  position: relative;
+  background-color: $java-50;
+
+  .container-footer-contact {
+    background-image: url("/imgs/FooterContact/background-footer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-size: 1.2rem;
+
+
+
+    .row-footer-contact {
+
+      .col-contact,
+      .col-brand,
+      .col-schedules {
+
+        .title-contact,
+        .title-schedules {
+          font-size: 1.1em;
+          font-weight: bold;
+
+        }
+
+        .description-brand,
+        .description-contact,
+        .description-schedules {
+          font-size: .75em;
+          color: $java-900;
+          font-weight: 500;
+          margin: 1.3em 0;
+
+          @include querie-compu {
+            font-size: .8em;
+
+          }
+        }
+      }
+
+      .col-brand {
+        @include box-flex($direction: column);
+        text-align: center;
+
+        @include querie-compu {
+          @include box-flex($direction: column, $alingHorizontal: flex-start);
+        }
+
+        .picture-img-brand {
+          width: 8em;
+
+          @include querie-compu {
+            width: 11em;
+          }
+
+          .img-brand {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        .title-brand {
+          font-weight: bold;
+
+          span {
+            color: $java-500;
+          }
+        }
+
+        .subtitle-text {
+          margin: 0 0 1em 0;
+          font-weight: bold;
+          color: $java-950;
+        }
+      }
+
+      .col-contact {
+        @include box-flex($direction: column, $alingVertical: flex-start);
+
+        .list-social-media {
+          width: 100%;
+          padding: 0;
+          @include box-flex($direction: column, $alingVertical: flex-start, $gap: .3em);
+          color: $java-700;
+          font-size: .7em;
+
+
+        }
+      }
+
+      .col-schedules {
+        .list-schedules {
+          list-style: none;
+
+          padding: 0;
+          font-size: .7em;
+
+          @include querie-compu {
+
+            font-size: .8em;
+          }
+
+          .item-shedules {
+            @include box-flex($alingHorizontal: space-between);
+            color: $java-900;
+          }
+        }
+      }
+
+      .col-copyright {
+        text-align: center;
+        font-size: .65em;
+
+        .message-copyright {
+          strong {
+            color: $java-600;
+          }
+        }
+
+        @include querie-compu {
+          font-size: .78em;
+
+
+
+        }
+      }
+    }
+  }
+}

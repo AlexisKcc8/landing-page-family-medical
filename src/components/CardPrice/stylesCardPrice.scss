@@ -69,7 +69,7 @@
         margin: 0.2em 0;
         padding: 0;
         overflow: hidden;
-        font-size: .6em;
+        font-size: .55em;
 
         .icon-check {
           width: 2rem;
@@ -82,7 +82,7 @@
 
 .bg-card-light {
   background-color: #fff;
-  background: linear-gradient(0deg, $java-200 0%, #fcfcfc 70%);
+  background: linear-gradient(0deg, $java-50 0%, #fcfcfc 80%);
 
   color: #000;
 }

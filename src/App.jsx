@@ -6,6 +6,7 @@ import { Banner } from "@components/Banner/Banner";
 import { RecognitionGallery } from "@layouts/RecognitionGallery/RecognitionGallery";
 import { Prices } from "@layouts/Prices/Prices";
 import { MyServices } from "@layouts/MyServices/MyServices";
+import { FooterContact } from "@layouts/FooterContact/FooterContact";
 
 function App() {
   return (
@@ -21,17 +22,8 @@ function App() {
         <RecognitionGallery />
         <MyServices />
         <Prices />
+        <FooterContact />
       </main>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 }
