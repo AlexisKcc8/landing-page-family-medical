@@ -10,7 +10,7 @@ export const Nabvar = () => {
     collapsedMenu.current.classList.toggle("show");
   };
   return (
-    <nav className="container-fluid-navbar container-fluid  navbar navbar-expand-lg  fixed-top d-lg-flex flex-lg-column py-0">
+    <nav className="container-fluid-navbar container-fluid  navbar navbar-expand-lg  fixed-top d-lg-flex flex-lg-column py-0 ">
       <header className="container-fluid-social-media-info container-fluid ">
         <section className="container-social-media-info container py-1 p-md-2">
           <div className="row-info-social-media row">

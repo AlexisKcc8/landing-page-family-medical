@@ -1,9 +1,9 @@
 import { CarouselGallery } from "@components/CarouselGallery/CarouselGallery";
 import { GridGallery } from "@components/GridGallery/GridGallery";
 import { dataRecognitions } from "@data/galleryRecognition";
+import { useRef } from "react";
 
 import "./stylesRecognitionGallery.scss";
-import { useRef } from "react";
 export const RecognitionGallery = () => {
   const $textRecognition = useRef(null);
   const $btnShowInfoRecognition = useRef(null);
