@@ -3,7 +3,20 @@ import { GridGallery } from "@components/GridGallery/GridGallery";
 import { dataRecognitions } from "@data/galleryRecognition";
 
 import "./stylesRecognitionGallery.scss";
+import { useRef } from "react";
 export const RecognitionGallery = () => {
+  const $textRecognition = useRef(null);
+  const $btnShowInfoRecognition = useRef(null);
+  const handleShowMoreInfo = () => {
+    $textRecognition.current.classList.toggle("show-all-text-recognition");
+
+    if ($btnShowInfoRecognition.current.textContent === "Ver más") {
+      $btnShowInfoRecognition.current.textContent = "Ver menos";
+    } else {
+      $btnShowInfoRecognition.current.textContent = "Ver más";
+    }
+  };
+
   return (
     <section className="container-fluid-recognition container-fluid">
       <article className="container-recognition container px-lg-5 ">
@@ -16,7 +29,7 @@ export const RecognitionGallery = () => {
               <h2 className="title-section">
                 <strong>Diplomas y certificados</strong>
               </h2>
-              <p className="text-start ">
+              <p ref={$textRecognition} className="text-recognition ">
                 Cada uno de estos documentos representa un hito en mi viaje
                 educativo y profesional, y refleja mi compromiso con la
                 excelencia en la medicina familiar. A través de años de estudio
@@ -24,6 +37,13 @@ export const RecognitionGallery = () => {
                 las habilidades necesarias para proporcionar una atención
                 integral y compasiva a mis pacientes y sus familias.
               </p>
+              <button
+                ref={$btnShowInfoRecognition}
+                onClick={handleShowMoreInfo}
+                className="btn d-lg-none btn-show-more-info-recognition"
+              >
+                Ver más
+              </button>
             </div>
           </aside>
           <aside className="d-md-none col-12">

@@ -18,9 +18,44 @@
             left: 0;
 
           }
+
+          .text-recognition {
+            // width: 100%;
+            // white-space: nowrap;
+            // text-align: start;
+            max-height: 4rem;
+            transition: max-height 0.5s ease;
+            // /* Evita que el texto se divida en varias líneas */
+            overflow: hidden;
+            // /* Oculta el texto que se desborda del contenedor */
+            margin: 1rem 0;
+
+            background: linear-gradient(0deg, #0101016a 0%, #fcfcfc1b 50%);
+
+            @include querie-compu {
+              max-height: 30rem;
+              background: linear-gradient(0deg, #010101 0%, #fcfcfc1b 0%);
+            }
+          }
+
+
+
+          .btn-show-more-info-recognition {
+            background-color: $java-600;
+            color: #fff;
+            font-weight: 600;
+            margin: 0 0 1rem 0;
+          }
         }
 
       }
     }
   }
+}
+
+.show-all-text-recognition {
+  max-height: 20rem !important;
+  transition: max-height 0.6s ease !important;
+  background: linear-gradient(0deg, #ffffff 0%, #fcfcfc1b 0%) !important;
+
 }
