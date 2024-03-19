@@ -11,7 +11,7 @@ export const CardPrice = (props) => {
     <div
       className={`container-card ${isDark ? "bg-card-dark" : "bg-card-light"}`}
     >
-      <div className="body-card">
+      <div className="body-card ">
         <p className="title-card ">{title}</p>
         <p className="description-card ">{description}</p>
         <h3 className="card-price m-0">
