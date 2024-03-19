@@ -35,11 +35,6 @@ export const Hero = () => {
                     </figure>
                   )}
                 </InView>
-                {/* <InView {...options}>
-                  {({ ref, inView }) => (
-                    
-                  )}
-                </InView> */}
                 <InView {...options}>
                   {({ ref, inView }) => (
                     <h2
