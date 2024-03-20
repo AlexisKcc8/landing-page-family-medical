@@ -19,24 +19,7 @@
 
           }
 
-          .text-recognition {
-            // width: 100%;
-            // white-space: nowrap;
-            // text-align: start;
-            max-height: 4rem;
-            transition: max-height 0.5s ease;
-            // /* Evita que el texto se divida en varias líneas */
-            overflow: hidden;
-            // /* Oculta el texto que se desborda del contenedor */
-            margin: 1rem 0;
-
-            background: linear-gradient(0deg, #0101016a 0%, #fcfcfc1b 50%);
-
-            @include querie-compu {
-              max-height: 30rem;
-              background: linear-gradient(0deg, #010101 0%, #fcfcfc1b 0%);
-            }
-          }
+          .text-recognition {}
 
 
 

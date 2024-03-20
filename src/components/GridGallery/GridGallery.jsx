@@ -1,15 +1,15 @@
-import { useEffect } from "react";
-import PhotoSwipeLightbox from "photoswipe/lightbox";
-import "photoswipe/style.css";
+import { useEffect } from 'react';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
 
-import "./stylesGridGallery.scss";
+import './stylesGridGallery.scss';
 export const GridGallery = (props) => {
   const { galleryID, images } = props;
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
-      gallery: "#" + galleryID,
-      children: "a",
-      pswpModule: () => import("photoswipe"),
+      gallery: '#' + galleryID,
+      children: 'a',
+      pswpModule: () => import('photoswipe'),
     });
     lightbox.init();
     return () => {
@@ -23,7 +23,7 @@ export const GridGallery = (props) => {
       {images.map((image, index) => (
         <div
           className="container-img-gallery col-sm-4 col-lg-6  border rounded-0 p-0 overflow-hidden"
-          key={galleryID + "-" + index}
+          key={galleryID + '-' + index}
         >
           <a
             className="link-img-recognition"
