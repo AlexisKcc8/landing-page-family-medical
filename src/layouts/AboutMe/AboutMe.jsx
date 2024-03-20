@@ -1,10 +1,10 @@
-import { dataAdvantageMe, dataIconsAboutMe } from "@data/AboutMe";
-import "./stylesAboutMe.scss";
+import { dataAdvantageMe, dataIconsAboutMe } from '@data/AboutMe';
+import './stylesAboutMe.scss';
 export const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className="container-fluid container-fluid-about-me min-vh-100 overflow-hidden"
+      className="container-fluid container-fluid-about-me min-vh-100"
     >
       <section className="container-about-me container overflow-hidden px-lg-5">
         <header className="row-header row ">
@@ -54,7 +54,7 @@ export const AboutMe = () => {
             <p>
               Cada día, encuentro inspiración en el compromiso de servir a mi
               comunidad y en la oportunidad de brindar atención médica de
-              calidad a quienes la necesitan.{" "}
+              calidad a quienes la necesitan.{' '}
             </p>
 
             <div className="row">
@@ -66,7 +66,7 @@ export const AboutMe = () => {
                   >
                     <img
                       className=" m-0 p-0"
-                      style={{ width: "2rem", height: "2rem" }}
+                      style={{ width: '2rem', height: '2rem' }}
                       src="/Icons/check.svg"
                       alt="icon-check"
                     />

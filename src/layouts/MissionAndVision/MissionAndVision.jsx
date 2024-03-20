@@ -3,7 +3,7 @@ export const MissionAndVision = () => {
   return (
     <section
       id="mision-vision"
-      className="container-fluid-mission-and-vision container-fluid overflow-hidden"
+      className="container-fluid-mission-and-vision container-fluid "
     >
       <section className="row-mission-and-vision row ">
         <aside className={`col-mission col-12 col-lg-6 px-lg-5 `}>
