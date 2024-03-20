@@ -28,7 +28,7 @@ export const RecognitionGallery = () => {
                   <h2
                     ref={ref}
                     className={`title-section animate__animated ${
-                      inView ? 'animate__fadeIn' : 'animate__fadeOut'
+                      inView ? 'animate__fadeInLeft' : 'animate__fadeOut'
                     }`}
                   >
                     <strong>Diplomas y certificados</strong>
