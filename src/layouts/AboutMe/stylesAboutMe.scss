@@ -1,23 +1,23 @@
 @import "@partials/box-flex";
 @import "@partials/variables";
+@import "@partials/media-queries";
 
 .container-fluid-about-me {
 
   .container-about-me {
     text-align: center;
 
-
-
-    .row-icons {}
-
     .row-information {
+
       /* From https://css.glass */
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 0;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      @include querie-compu {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 0;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
 
       .col-img {
         @include box-flex;
@@ -35,8 +35,6 @@
           }
         }
       }
-
-      .col-info {}
     }
   }
 }
