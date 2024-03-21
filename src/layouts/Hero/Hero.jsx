@@ -1,6 +1,6 @@
 import { InView } from 'react-intersection-observer';
-import './stylesHero.scss';
 
+import './stylesHero.scss';
 export const Hero = () => {
   return (
     <section className="container-fluid-hero container-fluid" id="home">

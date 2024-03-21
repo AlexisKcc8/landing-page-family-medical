@@ -1,16 +1,21 @@
+import { InView } from 'react-intersection-observer';
+
 import { CardPrice } from '@components/CardPrice/CardPrice';
 import { dataServices } from '@data/services';
+
 import './stylesPrices.scss';
-import { InView } from 'react-intersection-observer';
+
 export const Prices = () => {
   const filterServicesByPackage = (services, idPackage) => {
     idPackage = idPackage.toString();
     return services.filter((service) => service.package === idPackage);
   };
+
   const options = {
     threshold: 0,
     triggerOnce: true,
   };
+
   return (
     <section
       id="prices"

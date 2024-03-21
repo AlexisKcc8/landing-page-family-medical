@@ -1,6 +1,7 @@
 import { InView } from 'react-intersection-observer';
-import { dataIconBanner } from '@data/banner';
 import CountUp from 'react-countup';
+
+import { dataIconBanner } from '@data/banner';
 
 import './styleBanner.scss';
 export const Banner = () => {
@@ -8,6 +9,7 @@ export const Banner = () => {
     threshold: 0,
     triggerOnce: true,
   };
+
   return (
     <section className="container-fluid container-fluid-banner">
       <article className="container py-0 overflow-hidden">
@@ -28,7 +30,6 @@ export const Banner = () => {
                           <img src={item.icon} alt={`icon-${item.title}`} />
                         </figure>
                         <div className="text-start  p-0 text-white">
-                          {/* <h4 className="title">{item.number}+</h4> */}
                           <InView>
                             {({ inView, ref }) => (
                               <h4 ref={ref} className="title">
@@ -44,7 +45,6 @@ export const Banner = () => {
                               </h4>
                             )}
                           </InView>
-                          {/* <CountUp duration={2.75} end={100} /> */}
                           <p className="m-0">{item.subtitle}</p>
                         </div>
                       </div>

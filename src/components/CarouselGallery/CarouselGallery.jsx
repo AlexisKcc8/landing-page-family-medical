@@ -1,6 +1,4 @@
 import { useEffect, useRef } from 'react';
-// import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import 'photoswipe/style.css';
 import { InView } from 'react-intersection-observer';
 
 import './stylesCarouselGallery.scss';
@@ -10,23 +8,11 @@ export const CarouselGallery = (props) => {
   const itemActive = useRef();
 
   useEffect(() => {
-    // let lightbox = new PhotoSwipeLightbox({
-    //   gallery: '#' + galleryID,
-    //   children: 'a',
-    //   pswpModule: () => import('photoswipe'),
-    // });
-    // lightbox.init();
-
     const firtsItemActive = itemActive.current;
 
     if (firtsItemActive.getAttribute('index-active') == images.length - 1) {
       firtsItemActive.classList.add('active');
     }
-
-    // return () => {
-    //   lightbox.destroy();
-    //   lightbox = null;
-    // };
   }, []);
 
   return (

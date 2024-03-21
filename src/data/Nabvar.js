@@ -1,30 +1,28 @@
-import { v4 as uuidv4 } from "uuid";
-
 export const dataLinksNabvar = [
   {
-    id: uuidv4(),
-    href: "#home",
-    title: "Inicio",
+    id: crypto.randomUUID(),
+    href: '#home',
+    title: 'Inicio',
   },
   {
-    id: uuidv4(),
-    href: "#mision-vision",
-    title: "Misión y visión",
+    id: crypto.randomUUID(),
+    href: '#mision-vision',
+    title: 'Misión y visión',
   },
   {
-    id: uuidv4(),
-    href: "#about-me",
-    title: "Sobre mi",
+    id: crypto.randomUUID(),
+    href: '#about-me',
+    title: 'Sobre mi',
   },
   {
-    id: uuidv4(),
-    href: "#services",
-    title: "Servicios",
+    id: crypto.randomUUID(),
+    href: '#services',
+    title: 'Servicios',
   },
 
   {
-    id: uuidv4(),
-    href: "#prices",
-    title: "Preciós",
+    id: crypto.randomUUID(),
+    href: '#prices',
+    title: 'Preciós',
   },
 ];

@@ -1,8 +1,9 @@
+import { InView } from 'react-intersection-observer';
+
 import { CardService } from '@components/CardService/CardService';
 import { dataServices } from '@data/services';
 
 import './stylesMyServices.scss';
-import { InView } from 'react-intersection-observer';
 export const MyServices = () => {
   const getSpecificService = (services, indexService) => {
     indexService = parseInt(indexService);

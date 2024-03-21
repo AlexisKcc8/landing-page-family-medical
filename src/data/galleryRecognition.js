@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
-
 export const dataRecognitions = {
   galleryIdMobile: 'recognitionsInMobile',
   galleryIdDesktop: 'recognitionsInDesktop',

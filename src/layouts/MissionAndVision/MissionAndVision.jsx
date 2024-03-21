@@ -1,4 +1,5 @@
 import { InView } from 'react-intersection-observer';
+
 import './stylesMissionAndVision.scss';
 export const MissionAndVision = () => {
   return (
