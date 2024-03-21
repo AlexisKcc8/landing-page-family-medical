@@ -81,13 +81,13 @@ export const Prices = () => {
               >
                 <CardPrice
                   data={{
-                    title: 'Paquete 3: Consulta a domicilio',
+                    title: 'Paquete 2: Consulta a domicilio',
                     description:
                       'Creado para proporcionarle atención médica de calidad sin la molestia de desplazarse a una clínica u hospital. Estaremos encantados de visitarlo en la comodidad de su hogar.',
                     isDark: true,
                     price: 'Personalizado',
-                    services: filterServicesByPackage(dataServices, 3),
-                    packageBelongs: '3',
+                    services: filterServicesByPackage(dataServices, 2),
+                    packageBelongs: '2',
                   }}
                 />
               </div>
@@ -103,12 +103,12 @@ export const Prices = () => {
               >
                 <CardPrice
                   data={{
-                    title: 'Paquete 2: Consulta médica',
+                    title: 'Paquete 3: Consulta médica',
                     description:
                       'Diseñado con el objetivo de brindarle la atención médica que necesita para sentirse seguro y respaldado en cada paso de su viaje hacia la salud óptima.',
                     price: '$300.00',
-                    services: filterServicesByPackage(dataServices, 2),
-                    packageBelongs: '2',
+                    services: filterServicesByPackage(dataServices, 3),
+                    packageBelongs: '3',
                   }}
                 />
               </div>
