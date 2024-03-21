@@ -1,10 +1,28 @@
-import { CarouselRecognitions } from '@components/CarouselRecognitions/CarouselRecognitions';
-import { GridGallery } from '@components/GridGallery/GridGallery';
-import { dataRecognitions } from '@data/galleryRecognition';
+import { useEffect } from 'react';
 import { InView } from 'react-intersection-observer';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+import { CarouselGallery } from '@components/CarouselGallery/CarouselGallery';
+import { GridGallery } from '@components/GridGallery/GridGallery';
+
+import { dataRecognitions } from '@data/galleryRecognition';
 
 import './stylesRecognitionGallery.scss';
 export const RecognitionGallery = () => {
+  useEffect(() => {
+    let lightbox = new PhotoSwipeLightbox({
+      gallery: '#' + dataRecognitions.galleryIdMobile,
+      children: 'a',
+      pswpModule: () => import('photoswipe'),
+    });
+    lightbox.init();
+    return () => {
+      lightbox.destroy();
+      lightbox = null;
+    };
+  }, []);
+
   return (
     <section className="container-fluid-recognition container-fluid">
       <article className="container-recognition container px-lg-5 ">
@@ -56,7 +74,7 @@ export const RecognitionGallery = () => {
             </div>
           </aside>
           <aside className="d-md-none col-12">
-            <CarouselRecognitions
+            <CarouselGallery
               galleryID={dataRecognitions.galleryIdMobile}
               images={dataRecognitions.images}
             />
@@ -64,7 +82,7 @@ export const RecognitionGallery = () => {
           <aside className="col-12 col-lg-6">
             <section className="container py-0 d-none d-md-block">
               <GridGallery
-                galleryID={dataRecognitions.galleryIdDesktop}
+                galleryID={dataRecognitions.galleryIdMobile}
                 images={dataRecognitions.images}
               />
             </section>

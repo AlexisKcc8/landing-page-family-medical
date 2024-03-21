@@ -1,22 +1,22 @@
-import { useEffect } from 'react';
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import 'photoswipe/style.css';
+// import { useEffect } from 'react';
+// import PhotoSwipeLightbox from 'photoswipe/lightbox';
+// import 'photoswipe/style.css';
 
 import './stylesGridGallery.scss';
 export const GridGallery = (props) => {
   const { galleryID, images } = props;
-  useEffect(() => {
-    let lightbox = new PhotoSwipeLightbox({
-      gallery: '#' + galleryID,
-      children: 'a',
-      pswpModule: () => import('photoswipe'),
-    });
-    lightbox.init();
-    return () => {
-      lightbox.destroy();
-      lightbox = null;
-    };
-  }, []);
+  // useEffect(() => {
+  //   let lightbox = new PhotoSwipeLightbox({
+  //     gallery: '#' + galleryID,
+  //     children: 'a',
+  //     pswpModule: () => import('photoswipe'),
+  //   });
+  //   lightbox.init();
+  //   return () => {
+  //     lightbox.destroy();
+  //     lightbox = null;
+  //   };
+  // }, []);
 
   return (
     <section className="row-grid-gallery  row pswp-gallery " id={galleryID}>

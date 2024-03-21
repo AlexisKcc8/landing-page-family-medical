@@ -4,7 +4,7 @@ import 'photoswipe/style.css';
 import { InView } from 'react-intersection-observer';
 
 import './stylesCarouselGallery.scss';
-export const CarouselRecognitions = (props) => {
+export const CarouselGallery = (props) => {
   const { galleryID, images } = props;
 
   const itemActive = useRef();
