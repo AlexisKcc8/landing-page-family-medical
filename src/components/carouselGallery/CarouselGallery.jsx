@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
-import './stylesCarouselGallery.scss';
 import { InView } from 'react-intersection-observer';
 
+import './stylesCarouselGallery.scss';
 export const CarouselGallery = (props) => {
   const { galleryID, images } = props;
 
