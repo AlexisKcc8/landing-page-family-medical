@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
+// import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
 import { InView } from 'react-intersection-observer';
 
@@ -10,12 +10,12 @@ export const CarouselRecognitions = (props) => {
   const itemActive = useRef();
 
   useEffect(() => {
-    let lightbox = new PhotoSwipeLightbox({
-      gallery: '#' + galleryID,
-      children: 'a',
-      pswpModule: () => import('photoswipe'),
-    });
-    lightbox.init();
+    // let lightbox = new PhotoSwipeLightbox({
+    //   gallery: '#' + galleryID,
+    //   children: 'a',
+    //   pswpModule: () => import('photoswipe'),
+    // });
+    // lightbox.init();
 
     const firtsItemActive = itemActive.current;
 
@@ -23,10 +23,10 @@ export const CarouselRecognitions = (props) => {
       firtsItemActive.classList.add('active');
     }
 
-    return () => {
-      lightbox.destroy();
-      lightbox = null;
-    };
+    // return () => {
+    //   lightbox.destroy();
+    //   lightbox = null;
+    // };
   }, []);
 
   return (

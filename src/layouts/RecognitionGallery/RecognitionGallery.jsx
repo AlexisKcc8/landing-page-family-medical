@@ -1,4 +1,4 @@
-import { CarouselRecognitions } from '@components/CarouselGallery/CarouselRecognitions';
+import { CarouselRecognitions } from '@components/CarouselRecognitions/CarouselRecognitions';
 import { GridGallery } from '@components/GridGallery/GridGallery';
 import { dataRecognitions } from '@data/galleryRecognition';
 import { InView } from 'react-intersection-observer';
