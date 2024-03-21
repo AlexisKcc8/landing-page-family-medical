@@ -7,7 +7,10 @@ export const Prices = () => {
     idPackage = idPackage.toString();
     return services.filter((service) => service.package === idPackage);
   };
-
+  const options = {
+    threshold: 0,
+    triggerOnce: true,
+  };
   return (
     <section
       id="prices"
@@ -42,7 +45,7 @@ export const Prices = () => {
         </header>
 
         <section className="row-cards row mt-3 ">
-          <InView>
+          <InView {...options}>
             {({ inView, ref }) => (
               <div
                 ref={ref}
@@ -63,7 +66,7 @@ export const Prices = () => {
               </div>
             )}
           </InView>
-          <InView>
+          <InView {...options}>
             {({ inView, ref }) => (
               <div
                 ref={ref}
@@ -85,7 +88,7 @@ export const Prices = () => {
               </div>
             )}
           </InView>
-          <InView>
+          <InView {...options}>
             {({ inView, ref }) => (
               <div
                 ref={ref}

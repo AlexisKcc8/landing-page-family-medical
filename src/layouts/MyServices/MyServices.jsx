@@ -8,6 +8,11 @@ export const MyServices = () => {
     indexService = parseInt(indexService);
     return services[indexService];
   };
+
+  const options = {
+    threshold: 0,
+    triggerOnce: true,
+  };
   return (
     <section
       id="services"
@@ -42,7 +47,7 @@ export const MyServices = () => {
         </header>
 
         <section className="row-grid-services row  ">
-          <InView>
+          <InView {...options}>
             {({ inView, ref }) => (
               <article
                 ref={ref}
@@ -58,7 +63,7 @@ export const MyServices = () => {
               </article>
             )}
           </InView>
-          <InView>
+          <InView {...options}>
             {({ inView, ref }) => (
               <article
                 ref={ref}
@@ -75,7 +80,7 @@ export const MyServices = () => {
               </article>
             )}
           </InView>
-          <InView>
+          <InView {...options}>
             {({ inView, ref }) => (
               <article
                 ref={ref}
@@ -92,7 +97,7 @@ export const MyServices = () => {
               </article>
             )}
           </InView>
-          <InView>
+          <InView {...options}>
             {({ inView, ref }) => (
               <article
                 ref={ref}

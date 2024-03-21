@@ -1,14 +1,20 @@
-import { dataIconBanner } from '@data/banner';
-import './styleBanner.scss';
 import { InView } from 'react-intersection-observer';
+import { dataIconBanner } from '@data/banner';
+import CountUp from 'react-countup';
+
+import './styleBanner.scss';
 export const Banner = () => {
+  const options = {
+    threshold: 0,
+    triggerOnce: true,
+  };
   return (
     <section className="container-fluid container-fluid-banner">
       <article className="container py-0 overflow-hidden">
         <div className="row py-3">
           {dataIconBanner ? (
             dataIconBanner.map((item) => (
-              <InView key={item.id}>
+              <InView {...options} key={item.id}>
                 {({ inView, ref }) => (
                   <div
                     ref={ref}
@@ -22,7 +28,23 @@ export const Banner = () => {
                           <img src={item.icon} alt={`icon-${item.title}`} />
                         </figure>
                         <div className="text-start  p-0 text-white">
-                          <h4 className="title">{item.title}</h4>
+                          {/* <h4 className="title">{item.number}+</h4> */}
+                          <InView>
+                            {({ inView, ref }) => (
+                              <h4 ref={ref} className="title">
+                                {
+                                  <CountUp
+                                    separator=" "
+                                    duration={5}
+                                    start={0}
+                                    end={inView ? item.number : 0}
+                                  />
+                                }
+                                +
+                              </h4>
+                            )}
+                          </InView>
+                          {/* <CountUp duration={2.75} end={100} /> */}
                           <p className="m-0">{item.subtitle}</p>
                         </div>
                       </div>
