@@ -1,4 +1,4 @@
-// import { CarouselGallery } from '@components/CarouselGallery/CarouselGallery';
+import { CarouselGallery } from '@components/CarouselGallery/CarouselGallery';
 import { GridGallery } from '@components/GridGallery/GridGallery';
 import { dataRecognitions } from '@data/galleryRecognition';
 import { InView } from 'react-intersection-observer';
@@ -55,16 +55,16 @@ export const RecognitionGallery = () => {
               </InView>
             </div>
           </aside>
-          {/* <aside className="d-md-none col-12">
+          <aside className="d-md-none col-12">
             <CarouselGallery
-              galleryID={dataRecognitions.galleryID}
+              galleryID={dataRecognitions.galleryIdMobile}
               images={dataRecognitions.images}
             />
-          </aside> */}
+          </aside>
           <aside className="col-12 col-lg-6">
             <section className="container py-0 d-none d-md-block">
               <GridGallery
-                galleryID={dataRecognitions.galleryID}
+                galleryID={dataRecognitions.galleryIdDesktop}
                 images={dataRecognitions.images}
               />
             </section>
