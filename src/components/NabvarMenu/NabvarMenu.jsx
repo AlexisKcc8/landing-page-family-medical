@@ -9,16 +9,15 @@ export const NabvarMenu = () => {
   const $layerNabvarMenu = useRef(null);
   const handleToggleNabvarMenu = () => {
     $layerNabvarMenu.current.classList.toggle('show-layer-nabvar-menu');
-    document.body.classList.toggle('scroll-oculto');
   };
 
   return (
     <nav className="container-fluid-navbar container-fluid  navbar navbar-expand-lg  fixed-top d-lg-flex flex-lg-column py-0 ">
       <header className="container-fluid-info container-fluid ">
-        <section className="container-info container py-2 px-4  ">
+        <section className="container-info container py-2 px.lg-4  ">
           <div className="row-info row p-0 m-0">
             <div className="col-info-schedule col-12 text-center">
-              <div className="container-img-text d-none d-lg-flex">
+              <div className="container-img-text ">
                 <figure className="p-0 m-0 figure-img">
                   <img
                     className="w-100 h-100"
@@ -31,7 +30,7 @@ export const NabvarMenu = () => {
                   pm (previa cita).
                 </h6>
               </div>
-              <div className="container-img-text">
+              <div className="container-img-text d-none d-lg-flex">
                 <figure className="p-0 m-0 figure-img">
                   <img
                     className="w-100 h-100"

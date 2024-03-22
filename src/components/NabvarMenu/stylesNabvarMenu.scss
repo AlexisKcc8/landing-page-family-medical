@@ -30,10 +30,10 @@
           }
 
           .container-img-text {
-            @include box-flex($gap: .5rem);
+            @include box-flex($gap: .1rem);
 
             @include querie-compu {
-              @include box-flex($direction: row, $gap: .5rem);
+              @include box-flex($direction: row, $gap: .2rem);
             }
 
             .figure-img {
@@ -214,12 +214,5 @@
       transform: translateX(0%);
       transition: transform .3s ease;
     }
-  }
-}
-
-@keyframes adjust-header {
-  to {
-    background-color: red;
-
   }
 }
