@@ -14,27 +14,41 @@ export const NabvarMenu = () => {
 
   return (
     <nav className="container-fluid-navbar container-fluid  navbar navbar-expand-lg  fixed-top d-lg-flex flex-lg-column py-0 ">
-      <header className="container-fluid-social-media-info container-fluid ">
-        <section className="container-social-media-info container py-1 p-md-2">
-          <div className="row-info-social-media row">
-            <div className="col-info-schedule col-12 col-md-6">
-              <figure className="p-0 figure-clock">
-                <img
-                  className=""
-                  src="/Icons/clock-watch.svg"
-                  alt="icono-reloj"
-                />
-              </figure>
-              <h6 className="info-text m-0 p-0">
-                Horario: L a V de 4:00 pm a 10:00 pm, S y D de 8:00 am a 10:00
-                pm (previa cita).
-              </h6>
+      <header className="container-fluid-info container-fluid ">
+        <section className="container-info container py-2 px-4  ">
+          <div className="row-info row p-0 m-0">
+            <div className="col-info-schedule col-12 text-center">
+              <div className="container-img-text d-none d-lg-flex">
+                <figure className="p-0 m-0 figure-img">
+                  <img
+                    className="w-100 h-100"
+                    src="/Icons/clock-watch.svg"
+                    alt="icono-reloj"
+                  />
+                </figure>
+                <h6 className="info-text m-0 p-0">
+                  Horario: L a V de 4:00 pm a 10:00 pm, S y D de 8:00 am a 10:00
+                  pm (previa cita).
+                </h6>
+              </div>
+              <div className="container-img-text">
+                <figure className="p-0 m-0 figure-img">
+                  <img
+                    className="w-100 h-100"
+                    src=" /Icons/icon-google-maps.svg"
+                    alt="icono-reloj"
+                  />
+                </figure>
+                <h6 className="info-text m-0 p-0 ">
+                  97139 Jardines del Nte. Mérida, Yuc.
+                </h6>
+              </div>
             </div>
           </div>
         </section>
       </header>
 
-      <section className="container-brand-items-links container  py-2 px-lg-5 d-flex ">
+      <section className="container-brand-items-links container  py-2 px-4 px-lg-5 d-flex ">
         <a className="brand-navbar navbar-brand" href="index.html">
           <strong>
             <span>Family</span>Medical
@@ -44,7 +58,7 @@ export const NabvarMenu = () => {
 
         <button
           ref={$btnNabvarMenu}
-          className="btn-menu-burguer m-0 p-0 "
+          className="btn-menu-burguer m-0 p-0 d-lg-none"
           onClick={handleToggleNabvarMenu}
         >
           <img
@@ -63,7 +77,7 @@ export const NabvarMenu = () => {
             className="container-nabvar-menu"
             onClick={handleToggleNabvarMenu}
           >
-            <header className="header-nabvar-menu">
+            <header className="header-nabvar-menu d-lg-none">
               <h4 className="m-0 p-0 text-logo">
                 <strong>
                   <span>Family</span>Medical
@@ -100,17 +114,23 @@ export const NabvarMenu = () => {
               )}
             </ul>
 
-            <ul className="d-flex m-0 p-0 gap-3 justify-content-center justify-content-md-end  align-items-center mt-4">
+            <ul className="d-flex m-0 p-0 gap-3 justify-content-center justify-content-md-end  align-items-center mt-4 d-lg-none">
               <ItemsSocialMedia
                 onlyTheseIcons={['facebook', 'whatsapp', 'gmail']}
               />
             </ul>
-            <p className={` mt-4 message-copyright `}>
+            <p className={` mt-4 message-copyright d-lg-none`}>
               Copyright © 2024 <strong>FamilyMedical</strong>. Todos los
               derechos reservados. by <strong>Adrian Fuentes</strong>.
             </p>
           </nav>
         </article>
+
+        <ul className="d-flex m-0 p-0 gap-3 justify-content-center justify-content-md-end  align-items-center d-none d-lg-flex">
+          <ItemsSocialMedia
+            onlyTheseIcons={['facebook', 'whatsapp', 'gmail']}
+          />
+        </ul>
       </section>
     </nav>
   );

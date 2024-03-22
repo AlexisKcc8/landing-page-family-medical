@@ -5,7 +5,7 @@ import './stylesFooterContact.scss';
 export const FooterContact = () => {
   return (
     <footer
-      id="contact"
+      id="footer-contact"
       className="container-fluid-footer-contact container-fluid "
     >
       <section className="container-footer-contact container  px-lg-5 overflow-hidden">

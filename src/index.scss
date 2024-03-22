@@ -26,12 +26,13 @@ main {
     "slnt" 0;
 }
 
-section[id] {
-  scroll-margin-top: calc(var(--height-header-and-margin-sections) + 2rem);
+section[id],
+footer[id] {
+  scroll-margin-top: calc(var(--height-header-and-margin-sections) + 1rem);
 
   @include querie-compu {
 
-    scroll-margin-top: calc(var(--height-header-and-margin-sections) + 3rem);
+    scroll-margin-top: calc(var(--height-header-and-margin-sections) + 2.5rem);
   }
 }
 

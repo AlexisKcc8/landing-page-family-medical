@@ -15,42 +15,48 @@
   -webkit-backdrop-filter: blur(3.4px);
   // border: 1px solid rgba(255, 255, 255, 0.13);
 
-  .container-fluid-social-media-info {
+
+  .container-fluid-info {
 
     background-color: $java-400;
 
-    .container-social-media-info {
-      .row-info-social-media {
+    .container-info {
+      .row-info {
         .col-info-schedule {
-          text-align: center;
           @include box-flex;
 
           @include querie-compu {
-            justify-content: flex-start;
+            @include box-flex ($alingHorizontal: space-between);
           }
 
-          .figure-clock {
-            width: 1.5rem;
+          .container-img-text {
+            @include box-flex($gap: .5rem);
 
             @include querie-compu {
-              margin: 0 .5rem 0 0;
+              @include box-flex($direction: row, $gap: .5rem);
             }
 
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
+            .figure-img {
+              width: 1.5rem;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .info-text {
+              font-size: .8rem;
+              color: $color-white;
+
+              @include querie-compu {
+                font-size: .8rem;
+              }
             }
           }
 
-          .info-text {
-            font-size: .8rem;
-            color: $color-white;
 
-            @include querie-compu {
-              font-size: .95rem;
-            }
-          }
         }
       }
     }
@@ -94,7 +100,11 @@
       align-items: center;
       z-index: 200;
 
-      overscroll-behavior-y: contain;
+      @include querie-compu {
+        position: relative;
+        transform: translateX(0%);
+        height: auto;
+      }
 
 
       .container-nabvar-menu {
@@ -105,6 +115,14 @@
 
         display: flex;
         flex-direction: column;
+
+        @include querie-compu {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          background-color: #fff;
+
+        }
 
         .header-nabvar-menu {
           background-color: $java-900;
@@ -145,6 +163,11 @@
               }
 
               position: relative;
+
+              @include querie-compu {
+                color: #000;
+
+              }
 
               &::before,
               &::after {
@@ -191,5 +214,12 @@
       transform: translateX(0%);
       transition: transform .3s ease;
     }
+  }
+}
+
+@keyframes adjust-header {
+  to {
+    background-color: red;
+
   }
 }

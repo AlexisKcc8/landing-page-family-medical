@@ -1,4 +1,3 @@
-// import { Nabvar } from "@components/Nabvar/Nabvar";
 import { NabvarMenu } from '@components/NabvarMenu/NabvarMenu';
 import { Hero } from '@layouts/Hero/Hero';
 import { MissionAndVision } from '@layouts/MissionAndVision/MissionAndVision';
@@ -13,7 +12,6 @@ function App() {
   return (
     <>
       <header>
-        {/* <Nabvar /> */}
         <NabvarMenu />
       </header>
       <main>

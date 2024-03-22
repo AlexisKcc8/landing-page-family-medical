@@ -25,4 +25,9 @@ export const dataLinksNabvar = [
     href: '#prices',
     title: 'Preciós',
   },
+  {
+    id: crypto.randomUUID(),
+    href: '#footer-contact',
+    title: 'Contacto',
+  },
 ];
