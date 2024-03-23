@@ -11,18 +11,28 @@ export const Hero = () => {
               <div className="col-12 container-content ">
                 <InView>
                   {({ inView, ref }) => (
-                    <figure
+                    <picture
                       ref={ref}
-                      className={`figure-logo m-0 mt-5 animate__animated ${
+                      className={`picture-logo m-0 mt-5 animate__animated ${
                         inView ? 'animate__fadeIn' : 'animate__fadeOut'
                       }`}
                     >
-                      <img
-                        className="m-0"
-                        src="/imgs/logo-family-medical.png"
-                        alt="Logo-family-medical"
+                      <source
+                        className="img-service"
+                        type="image/avif"
+                        srcSet="/imgs/logo-family-medical.avif"
                       />
-                    </figure>
+                      <source
+                        className="img-service"
+                        type="image/webp"
+                        srcSet="/imgs/logo-family-medical.webp"
+                      />
+                      <img
+                        className="m-0  logo-family-medical"
+                        src="/imgs/logo-family-medical.png"
+                        alt="Logo family medical"
+                      />
+                    </picture>
                   )}
                 </InView>
                 <InView>

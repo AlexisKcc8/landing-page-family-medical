@@ -62,20 +62,45 @@ export const AboutMe = () => {
         </article>
 
         <article className="row-information row d-flex pt-3 ">
-          <div className="col-img col-12 col-lg-6 order-md-2 overflow-hidden py-3">
+          <div className="col-img col-12 col-lg-6 order-md-2 overflow-hidden ">
             <InView {...options}>
               {({ inView, ref }) => (
-                <figure
+                <picture
                   ref={ref}
-                  className={`h-100 animate__animated ${
+                  className={`figure-image animate__animated ${
                     inView ? 'animate__fadeIn' : 'animate__fadeOut'
                   }`}
                 >
+                  <source
+                    media="(min-width: 992px)"
+                    className="img-service"
+                    type="image/avif"
+                    srcSet="/imgs/aboutMe/img-about-me-desktop.avif"
+                  />
+                  <source
+                    media="(min-width: 992px)"
+                    className="img-service"
+                    type="image/webp"
+                    srcSet="/imgs/aboutMe/img-about-me-desktop.webp"
+                  />
+
+                  <source
+                    className="img-service"
+                    type="image/avif"
+                    srcSet="/imgs/aboutMe/img-about-me.avif"
+                  />
+                  <source
+                    className="img-service"
+                    type="image/webp"
+                    srcSet="/imgs/aboutMe/img-about-me.webp"
+                  />
+
                   <img
+                    className="image-about-me"
                     src="/imgs/aboutMe/img-about-me.jpg"
                     alt="img-sobre-mi"
                   />
-                </figure>
+                </picture>
               )}
             </InView>
           </div>
@@ -85,7 +110,7 @@ export const AboutMe = () => {
               {({ inView, ref }) => (
                 <h4
                   ref={ref}
-                  className={`animate__animated ${
+                  className={`my-3 mt-lg-0 animate__animated ${
                     inView ? 'animate__fadeInDown' : 'animate__fadeOut'
                   }`}
                 >

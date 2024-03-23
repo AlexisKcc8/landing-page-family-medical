@@ -59,10 +59,20 @@ export const FooterContact = () => {
                     inView ? 'animate__fadeIn' : 'animate__fadeOut'
                   }`}
                 >
+                  <source
+                    className="img-brand m-0 p-0"
+                    type="image/avif"
+                    srcSet="/imgs/logo-family-medical.avif"
+                  />
+                  <source
+                    className="img-brand m-0 p-0"
+                    type="image/webp"
+                    srcSet="/imgs/logo-family-medical.webp"
+                  />
                   <img
                     className="img-brand m-0 p-0"
                     src="/imgs/logo-family-medical.png"
-                    alt=""
+                    alt="logo family medical"
                   />
                 </picture>
               )}
