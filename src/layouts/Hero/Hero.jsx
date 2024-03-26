@@ -69,22 +69,8 @@ export const Hero = () => {
                         inView ? 'animate__fadeIn' : 'animate__fadeOut'
                       }`}
                     >
-                      <strong>MÉDICO CIRUJANO</strong>
+                      <strong>MÉDICO CIRUJANO / MÉDICO FAMILIAR</strong>
                     </h3>
-                  )}
-                </InView>
-
-                <InView>
-                  {({ inView, ref }) => (
-                    <p
-                      ref={ref}
-                      className={`description animate__animated ${
-                        inView ? 'animate__fadeIn' : 'animate__fadeOut'
-                      }`}
-                    >
-                      &#34;Su familia, nuestra prioridad: atención médica de
-                      calidad centrada en usted.&rdquo;
-                    </p>
                   )}
                 </InView>
               </div>

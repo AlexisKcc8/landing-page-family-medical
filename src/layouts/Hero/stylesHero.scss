@@ -21,7 +21,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #0000008a;
+      background-color: #0000009d;
       overflow: hidden;
 
       .container-content {
@@ -76,21 +76,8 @@
           text-shadow: 1px 1px 1px #000000;
 
           @include querie-compu {
-            font-size: 2.5rem;
+            font-size: 3rem;
           }
-        }
-
-        .description {
-          font-size: 1.1rem;
-          color: $java-50;
-
-          text-shadow: 1px 1px 1px #000000;
-
-          @include querie-compu {
-            width: 60%;
-            font-size: 1.7rem;
-          }
-
         }
       }
     }

@@ -1,0 +1,38 @@
+@import "@partials/box-flex";
+@import "@partials/media-queries";
+@import "@partials/variables";
+
+.container-fluid-banner-message {
+  background-color: $java-50;
+
+  .container-banner-message {
+    .row-banner-message {
+      .col-banner-message {
+        @include box-flex($direction: column);
+        text-align: center;
+
+        .message {
+          color: $java-700;
+          font-weight: 600;
+          font-size: 1.2rem;
+          max-width: 100%;
+
+          @include querie-compu {
+            max-width: 70%;
+            font-size: 2rem;
+          }
+        }
+
+        .title-brand {
+          font-size: .9rem;
+          font-weight: 600;
+          color: #808080;
+
+          @include querie-compu {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

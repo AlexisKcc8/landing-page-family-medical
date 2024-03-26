@@ -1,5 +1,6 @@
 import { NabvarMenu } from '@components/NabvarMenu/NabvarMenu';
 import { Hero } from '@layouts/Hero/Hero';
+import { BannerMessage } from '@components/BannerMessage/BannerMessage';
 import { MissionAndVision } from '@layouts/MissionAndVision/MissionAndVision';
 import { AboutMe } from '@layouts/AboutMe/AboutMe';
 import { Banner } from '@components/Banner/Banner';
@@ -16,6 +17,7 @@ function App() {
       </header>
       <main>
         <Hero />
+        <BannerMessage />
         <MissionAndVision />
         <AboutMe />
         <Banner />
