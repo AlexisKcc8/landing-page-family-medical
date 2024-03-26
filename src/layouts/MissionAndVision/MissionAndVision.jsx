@@ -61,8 +61,8 @@ export const MissionAndVision = () => {
                   }`}
                 >
                   En 2030 ser una empresa reconocida por nuestra atención a
-                  nivel local, establecidos firmemente en la mente de nuestros
-                  pacientes como la mejor opción.
+                  nivel local, posicionandonos como la mejor opción en la mente
+                  de nuestros pacientes.
                 </p>
               )}
             </InView>
