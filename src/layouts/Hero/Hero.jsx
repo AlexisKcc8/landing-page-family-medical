@@ -63,14 +63,14 @@ export const Hero = () => {
                 </InView>
                 <InView>
                   {({ inView, ref }) => (
-                    <h3
+                    <h1
                       ref={ref}
                       className={`subtitle animate__animated ${
                         inView ? 'animate__fadeIn' : 'animate__fadeOut'
                       }`}
                     >
                       <strong>MÉDICO CIRUJANO / MÉDICO FAMILIAR</strong>
-                    </h3>
+                    </h1>
                   )}
                 </InView>
               </div>

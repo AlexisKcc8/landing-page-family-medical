@@ -97,9 +97,9 @@ export const FooterContact = () => {
                     inView ? 'animate__fadeIn' : 'animate__fadeOut'
                   }`}
                 >
-                  La pasión por mi trabajo impulsa cada paso de mi práctica,
-                  guiándome hacia una atención centrada en el paciente que va
-                  más allá del simple tratamiento de enfermedades.
+                  No espere más para cuidar su salud y la de su familia. ¡Agende
+                  una cita con Family Medical hoy mismo y dé el primer paso
+                  hacia una vida más saludable y feliz!
                 </p>
               )}
             </InView>
