@@ -38,7 +38,7 @@ export const MyServices = () => {
               <h2
                 ref={ref}
                 className={`title-section m-0 p-0 animate__animated ${
-                  inView ? 'animate__fadeInDown' : 'animate__fadeOut'
+                  inView ? 'animate__fadeInDown ' : 'animate__fadeOut'
                 }`}
               >
                 <strong>Servicios confiables y de la mejor calidad.</strong>
@@ -53,7 +53,7 @@ export const MyServices = () => {
               <article
                 ref={ref}
                 className={`col-12 p-0  mb-3 mb-lg-0 animate__animated ${
-                  inView ? 'animate__fadeInLeft' : 'animate__fadeOutRight'
+                  inView ? 'animate__fadeIn' : 'animate__fadeOutRight'
                 }`}
               >
                 <CardService
@@ -103,7 +103,7 @@ export const MyServices = () => {
               <article
                 ref={ref}
                 className={`col-12 p-0 mb-3 mb-lg-0 animate__animated ${
-                  inView ? 'animate__fadeInRight' : 'animate__fadeOutLeft'
+                  inView ? 'animate__fadeIn' : 'animate__fadeOutLeft'
                 }`}
               >
                 <CardService
