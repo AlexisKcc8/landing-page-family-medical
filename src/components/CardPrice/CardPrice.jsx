@@ -1,5 +1,5 @@
-import { ItemsSocialMedia } from "../ItemsSocialMedia/ItemsSocialMedia";
-import "./stylesCardPrice.scss";
+import { ItemsSocialMedia } from '../ItemsSocialMedia/ItemsSocialMedia';
+import './stylesCardPrice.scss';
 export const CardPrice = (props) => {
   const { data } = props;
 
@@ -9,7 +9,7 @@ export const CardPrice = (props) => {
 
   return services.length > 0 ? (
     <div
-      className={`container-card ${isDark ? "bg-card-dark" : "bg-card-light"}`}
+      className={`container-card ${isDark ? 'bg-card-dark' : 'bg-card-light'}`}
     >
       <div className="body-card ">
         <p className="title-card ">{title}</p>
@@ -23,8 +23,8 @@ export const CardPrice = (props) => {
           rel="noopener noreferrer"
           className={`btn btn-contact w-100 border border-black p-3 mt-4 ${
             isDark
-              ? "border-white bg-white text-black"
-              : "border-black text-black"
+              ? 'border-white bg-white text-black'
+              : 'border-black text-black'
           }`}
         >
           Enviar WhatsApp

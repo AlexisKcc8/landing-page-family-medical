@@ -17,7 +17,7 @@ export const MyServices = () => {
   return (
     <section
       id="services"
-      className="container-fluid-services container-fluid min-vh-100 "
+      className="container-fluid-services container-fluid "
     >
       <article className="container-services container overflow-hidden">
         <header className="row-header row text-center ">

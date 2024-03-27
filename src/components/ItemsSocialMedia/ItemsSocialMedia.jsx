@@ -16,7 +16,7 @@ export const ItemsSocialMedia = (props) => {
                   className="text-decoration-none"
                   href={icon.url}
                   target="_black"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   <img
                     style={{ width: '2rem', height: '2rem' }}
@@ -37,7 +37,7 @@ export const ItemsSocialMedia = (props) => {
                 className="text-decoration-none"
                 href={icon.url}
                 target="_black"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 style={{ color: 'inherit' }}
               >
                 <img

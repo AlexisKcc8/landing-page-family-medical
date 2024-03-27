@@ -10,7 +10,7 @@ export const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className="container-fluid container-fluid-about-me min-vh-100"
+      className="container-fluid container-fluid-about-me "
     >
       <section className="container-about-me container overflow-hidden px-lg-5">
         <header className="row-header row ">

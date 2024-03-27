@@ -17,10 +17,7 @@ export const Prices = () => {
   };
 
   return (
-    <section
-      id="prices"
-      className="container-fluid-prices container-fluid min-vh-100 "
-    >
+    <section id="prices" className="container-fluid-prices container-fluid ">
       <article className="container-prices container">
         <header className="row-header row text-center">
           <InView>
