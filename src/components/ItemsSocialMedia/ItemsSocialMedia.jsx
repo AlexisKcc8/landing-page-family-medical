@@ -1,4 +1,4 @@
-import { dataSocialsMedia } from "@data/socialMedia";
+import { dataSocialsMedia } from '@data/socialMedia';
 
 export const ItemsSocialMedia = (props) => {
   let { onlyTheseIcons, showTitle } = props;
@@ -11,14 +11,15 @@ export const ItemsSocialMedia = (props) => {
         onlyTheseIcons.length > 0 ? (
           dataSocialsMedia.map((icon) =>
             [...onlyTheseIcons].includes(icon.title) ? (
-              <li className="" key={icon.id} style={{ listStyle: "none" }}>
+              <li className="" key={icon.id} style={{ listStyle: 'none' }}>
                 <a
                   className="text-decoration-none"
                   href={icon.url}
                   target="_black"
+                  rel="noreferrer"
                 >
                   <img
-                    style={{ width: "2rem", height: "2rem" }}
+                    style={{ width: '2rem', height: '2rem' }}
                     src={icon.icon}
                     alt={`icono-${icon.title}`}
                   />
@@ -31,15 +32,16 @@ export const ItemsSocialMedia = (props) => {
           )
         ) : (
           dataSocialsMedia.map((icon) => (
-            <li className="" key={icon.id} style={{ listStyle: "none" }}>
+            <li className="" key={icon.id} style={{ listStyle: 'none' }}>
               <a
                 className="text-decoration-none"
                 href={icon.url}
                 target="_black"
-                style={{ color: "inherit" }}
+                rel="noreferrer"
+                style={{ color: 'inherit' }}
               >
                 <img
-                  style={{ width: "2rem", height: "2rem" }}
+                  style={{ width: '2rem', height: '2rem' }}
                   src={icon.icon}
                   alt={`icono-${icon.title}`}
                 />

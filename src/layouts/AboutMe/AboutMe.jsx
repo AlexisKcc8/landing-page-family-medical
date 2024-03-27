@@ -98,7 +98,7 @@ export const AboutMe = () => {
                   <img
                     className="image-about-me"
                     src="/imgs/aboutMe/img-about-me.jpg"
-                    alt="img-sobre-mi"
+                    alt="imagen sobre mi"
                   />
                 </picture>
               )}

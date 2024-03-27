@@ -44,7 +44,10 @@ export const CarouselGallery = (props) => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src={image.srcImgWebp} alt="" />
+                    <img
+                      src={image.srcImgWebp}
+                      alt={`imagen de ${image.title}`}
+                    />
                   </a>
                 </div>
               ))

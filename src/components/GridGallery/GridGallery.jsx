@@ -33,7 +33,7 @@ export const GridGallery = (props) => {
                 <img
                   className="img-recognition"
                   src={image.srcImgJpg}
-                  alt={`imagen-${image.title}`}
+                  alt={`imagen de ${image.title}`}
                 />
                 <div className="layer">
                   <p>Da click, para una mejor visualización.</p>
