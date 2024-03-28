@@ -1,4 +1,5 @@
 import { InView } from 'react-intersection-observer';
+import { TextLogo } from '@components/TextLogo/TextLogo';
 
 import './stylesHero.scss';
 export const Hero = () => {
@@ -37,23 +38,20 @@ export const Hero = () => {
                 </InView>
                 <InView>
                   {({ inView, ref }) => (
-                    <h2
-                      ref={ref}
-                      className={`title-brand animate__animated ${
-                        inView ? 'animate__fadeIn' : 'animate__fadeOut'
-                      }`}
-                    >
-                      <strong>
-                        <span>Family</span>Medical
-                      </strong>
-                    </h2>
+                    <div ref={ref}>
+                      <TextLogo
+                        classTextLogo={`title-brand animate__animated ${
+                          inView ? 'animate__fadeIn' : 'animate__fadeOut'
+                        }`}
+                      />
+                    </div>
                   )}
                 </InView>
                 <InView>
                   {({ inView, ref }) => (
                     <h2
                       ref={ref}
-                      className={`title animate__animated ${
+                      className={`name-doctor animate__animated ${
                         inView ? 'animate__fadeInDown' : 'animate__fadeOut'
                       }`}
                     >

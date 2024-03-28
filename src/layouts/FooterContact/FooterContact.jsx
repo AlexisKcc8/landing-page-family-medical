@@ -1,5 +1,6 @@
 import { InView } from 'react-intersection-observer';
 import { ItemsSocialMedia } from '@components/ItemsSocialMedia/ItemsSocialMedia';
+import { TextLogo } from '@components/TextLogo/TextLogo';
 
 import './stylesFooterContact.scss';
 export const FooterContact = () => {
@@ -79,14 +80,13 @@ export const FooterContact = () => {
             </InView>
             <InView>
               {({ inView, ref }) => (
-                <h5
-                  ref={ref}
-                  className={`title-brand m-0 p-0 animate__animated ${
-                    inView ? 'animate__fadeIn' : 'animate__fadeOut'
-                  }`}
-                >
-                  <span>Family</span>Medical
-                </h5>
+                <div ref={ref}>
+                  <TextLogo
+                    classTextLogo={`title-brand m-0 p-0 animate__animated ${
+                      inView ? 'animate__fadeIn' : 'animate__fadeOut'
+                    }`}
+                  />
+                </div>
               )}
             </InView>
             <InView>

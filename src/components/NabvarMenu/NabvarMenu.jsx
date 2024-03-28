@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 
 import { ItemsSocialMedia } from '@components/ItemsSocialMedia/ItemsSocialMedia';
+import { TextLogo } from '@components/TextLogo/TextLogo';
 import { dataLinksNabvar } from '@data/Nabvar';
 
 import './stylesNabvarMenu.scss';
@@ -48,13 +49,10 @@ export const NabvarMenu = () => {
       </header>
 
       <section className="container-brand-items-links container  py-2 px-4 px-lg-5 d-flex ">
-        <a className="brand-navbar navbar-brand" href="index.html">
-          <strong>
-            <span>Family</span>Medical
-          </strong>
+        <div className="d-flex align-items-center justify-content-center">
+          <TextLogo />
           <img src="/Icons/building-hospital.svg" alt="Icon Hospital" />
-        </a>
-
+        </div>
         <button
           ref={$btnNabvarMenu}
           className="btn-menu-burguer m-0 p-0 d-lg-none"
