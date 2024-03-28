@@ -186,7 +186,7 @@ export const FooterContact = () => {
                   }`}
                 >
                   Copyright © 2024 <strong>FamilyMedical</strong>. Todos los
-                  derechos reservados. by <strong>Adrian Fuentes</strong>.
+                  derechos reservados. by <strong>Carlos Fuentes</strong>.
                 </p>
               )}
             </InView>

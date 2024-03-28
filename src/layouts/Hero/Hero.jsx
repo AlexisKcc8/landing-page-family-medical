@@ -57,7 +57,7 @@ export const Hero = () => {
                         inView ? 'animate__fadeInDown' : 'animate__fadeOut'
                       }`}
                     >
-                      Dr. ADRIAN FUENTES
+                      Dr. CARLOS FUENTES
                     </h2>
                   )}
                 </InView>
