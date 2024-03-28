@@ -73,24 +73,24 @@ export const AboutMe = () => {
                 >
                   <source
                     media="(min-width: 992px)"
-                    className="img-service"
+                    className="image-about-me"
                     type="image/avif"
                     srcSet="/imgs/aboutMe/img-about-me-desktop.avif"
                   />
                   <source
                     media="(min-width: 992px)"
-                    className="img-service"
+                    className="image-about-me"
                     type="image/webp"
                     srcSet="/imgs/aboutMe/img-about-me-desktop.webp"
                   />
 
                   <source
-                    className="img-service"
+                    className="image-about-me"
                     type="image/avif"
                     srcSet="/imgs/aboutMe/img-about-me.avif"
                   />
                   <source
-                    className="img-service"
+                    className="image-about-me"
                     type="image/webp"
                     srcSet="/imgs/aboutMe/img-about-me.webp"
                   />

@@ -59,10 +59,7 @@
       .body-card {
 
         .title-card {
-          font-weight: 500;
-
-          transition: font-weight .3s ease-in-out;
-
+          font-weight: 600;
         }
 
       }
@@ -82,18 +79,6 @@
         }
       }
 
-    }
-
-    .col-info {
-
-      .body-card {
-
-        .title-card {
-          font-weight: bold;
-          transition: font-weight .4s ease-in-out;
-        }
-
-      }
     }
   }
 }

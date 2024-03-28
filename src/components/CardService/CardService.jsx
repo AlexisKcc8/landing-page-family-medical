@@ -8,9 +8,12 @@ export const CardService = (props) => {
   let { orderWiewInfo: orderId, service, bgColor } = data;
 
   let {
-    imagenAvif,
-    imagenWebp,
-    imagenJpg,
+    imagenWebpMovil,
+    imagenAvifMovil,
+    imagenJpgMovil,
+    imagenWebpDesktop,
+    imagenAvifDesktop,
+    imagenJpgDesktop,
     title,
     description,
     price,
@@ -30,6 +33,35 @@ export const CardService = (props) => {
           <div className="layer-img-service">
             <picture className="picture-img-service">
               <source
+                media="(min-width: 992px)"
+                className="img-service"
+                type="image/avif"
+                srcSet={imagenAvifDesktop}
+              />
+              <source
+                media="(min-width: 992px)"
+                className="img-service"
+                type="image/webp"
+                srcSet={imagenWebpDesktop}
+              />
+
+              <source
+                className="img-service"
+                type="image/avif"
+                srcSet={imagenAvifMovil}
+              />
+              <source
+                className="img-service"
+                type="image/webp"
+                srcSet={imagenWebpMovil}
+              />
+
+              <img
+                className="img-service"
+                src={imagenJpgDesktop}
+                alt={`imagen ${title}`}
+              />
+              {/* <source
                 className="img-service"
                 type="image/avif"
                 srcSet={imagenAvif}
@@ -43,7 +75,7 @@ export const CardService = (props) => {
                 src={imagenJpg}
                 className="img-service"
                 alt={`imagen de ${title}`}
-              />
+              /> */}
               <div className="layer"></div>
             </picture>
           </div>
