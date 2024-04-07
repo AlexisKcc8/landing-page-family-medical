@@ -1,0 +1,16 @@
+@import "@partials/box-flex";
+@import "@partials/media-queries";
+@import "@partials/variables";
+
+.container-fluid-promotions {
+  background-color: $java-950;
+  color: #fff;
+
+  .row-header-promotions {
+    .col-header-promotions {
+      .title-section__promotions {
+        color: $java-200;
+      }
+    }
+  }
+}

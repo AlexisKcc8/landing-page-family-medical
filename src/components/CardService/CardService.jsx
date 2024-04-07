@@ -1,4 +1,4 @@
-import './stylesCardService.scss';
+import "./stylesCardService.scss";
 export const CardService = (props) => {
   const { data } = props;
 
@@ -21,7 +21,7 @@ export const CardService = (props) => {
   } = service;
 
   orderId = orderId !== undefined ? orderId : [1, 1];
-  bgColor = bgColor !== undefined ? bgColor : '#fff';
+  bgColor = bgColor !== undefined ? bgColor : "#fff";
   return (
     <article className="container-card-service card h-100  rounded-0 border-0">
       <section className="row-card-service row g-0 h-100 ">
@@ -61,21 +61,6 @@ export const CardService = (props) => {
                 src={imagenJpgDesktop}
                 alt={`imagen ${title}`}
               />
-              {/* <source
-                className="img-service"
-                type="image/avif"
-                srcSet={imagenAvif}
-              />
-              <source
-                className="img-service"
-                type="image/webp"
-                srcSet={imagenWebp}
-              />
-              <img
-                src={imagenJpg}
-                className="img-service"
-                alt={`imagen de ${title}`}
-              /> */}
               <div className="layer"></div>
             </picture>
           </div>
@@ -83,7 +68,7 @@ export const CardService = (props) => {
         <aside
           className={`col-info col-md-6 order-${
             orderId[0] > 1 ? orderId[1] : 1
-          } p-3 ${bgColor !== '#fff' ? 'text-white' : ''}`}
+          } p-3 ${bgColor !== "#fff" ? "text-white" : ""}`}
           style={{ backgroundColor: `${bgColor}` }}
         >
           <div className="body-card card-body ">

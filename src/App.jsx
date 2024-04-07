@@ -5,6 +5,7 @@ import { MissionAndVision } from '@layouts/MissionAndVision/MissionAndVision';
 import { AboutMe } from '@layouts/AboutMe/AboutMe';
 import { Banner } from '@components/Banner/Banner';
 import { RecognitionGallery } from '@layouts/RecognitionGallery/RecognitionGallery';
+import { Promotions } from '@layouts/Promotions/Promotions';
 import { Prices } from '@layouts/Prices/Prices';
 import { MyServices } from '@layouts/MyServices/MyServices';
 import { FooterContact } from '@layouts/FooterContact/FooterContact';
@@ -22,6 +23,7 @@ function App() {
         <AboutMe />
         <Banner />
         <RecognitionGallery />
+        <Promotions />
         <MyServices />
         <Prices />
         <FooterContact />
