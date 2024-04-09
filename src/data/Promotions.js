@@ -7,7 +7,7 @@ export const dataPromotions = [
     imagenWebpDesktop: "/imgs/promotions/seguimiento-sin-costo-desktop.webp",
     imagenAvifDesktop: "/imgs/promotions/seguimiento-sin-costo-desktop.avif",
     imagenJpgDesktop: "/imgs/promotions/seguimiento-sin-costo-desktop.jpg",
-    title: "¡Sigue Sano, Sigue Gratis! Consulta de Seguimiento sin Costo",
+    title: "¡Sigue Sano! Consulta de Seguimiento sin Costo",
     description:
       "Porque nos preocupamos por tu salud  y que nuestros diagnósticos y tratamientos sean efectivos la consulta de seguimiento es “gratis” para un mismo padecimiento, incluye interpretación de estudios de laboratorios o gabinete que tengas ,ajuste o cambios de tratamiento . (máximo 3 seguimientos)",
     item: 1,
