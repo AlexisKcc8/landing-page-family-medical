@@ -1,15 +1,15 @@
-import { useRef } from 'react';
+import { useRef } from "react";
 
-import { ItemsSocialMedia } from '@components/ItemsSocialMedia/ItemsSocialMedia';
-import { TextLogo } from '@components/TextLogo/TextLogo';
-import { dataLinksNabvar } from '@data/Nabvar';
+import { ItemsSocialMedia } from "@components/ItemsSocialMedia/ItemsSocialMedia";
+import { TextLogo } from "@components/TextLogo/TextLogo";
+import { dataLinksNabvar } from "@data/Nabvar";
 
-import './stylesNabvarMenu.scss';
+import "./stylesNabvarMenu.scss";
 export const NabvarMenu = () => {
   const $btnNabvarMenu = useRef(null);
   const $layerNabvarMenu = useRef(null);
   const handleToggleNabvarMenu = () => {
-    $layerNabvarMenu.current.classList.toggle('show-layer-nabvar-menu');
+    $layerNabvarMenu.current.classList.toggle("show-layer-nabvar-menu");
   };
 
   return (
@@ -17,8 +17,8 @@ export const NabvarMenu = () => {
       <header className="container-fluid-info container-fluid ">
         <section className="container-info container py-2 px.lg-4  ">
           <div className="row-info row p-0 m-0">
-            <div className="col-info-schedule col-12 text-center">
-              <div className="container-img-text ">
+            <div className="col-info-schedule col-12 d-flex justify-content-center align-items-center">
+              <div className="container-img-text text-center">
                 <figure className="p-0 m-0 figure-img">
                   <img
                     className="w-100 h-100"
@@ -29,18 +29,6 @@ export const NabvarMenu = () => {
                 <h6 className="info-text m-0 p-0">
                   Horario: L a V de 4:00 pm a 10:00 pm, S y D de 8:00 am a 10:00
                   pm (previa cita).
-                </h6>
-              </div>
-              <div className="container-img-text d-none d-lg-flex">
-                <figure className="p-0 m-0 figure-img">
-                  <img
-                    className="w-100 h-100"
-                    src=" /Icons/icon-google-maps.svg"
-                    alt="icono-reloj"
-                  />
-                </figure>
-                <h6 className="info-text m-0 p-0 ">
-                  97139 Jardines del Nte. Mérida, Yuc.
                 </h6>
               </div>
             </div>
@@ -113,7 +101,7 @@ export const NabvarMenu = () => {
 
             <ul className="d-flex m-0 p-0 gap-3 justify-content-center justify-content-md-end  align-items-center mt-4 d-lg-none">
               <ItemsSocialMedia
-                onlyTheseIcons={['facebook', 'whatsapp', 'gmail']}
+                onlyTheseIcons={["facebook", "whatsapp", "gmail"]}
               />
             </ul>
             <p className={` mt-4 message-copyright d-lg-none`}>
@@ -125,7 +113,7 @@ export const NabvarMenu = () => {
 
         <ul className="d-flex m-0 p-0 gap-3 justify-content-center justify-content-md-end  align-items-center d-none d-lg-flex">
           <ItemsSocialMedia
-            onlyTheseIcons={['facebook', 'whatsapp', 'gmail']}
+            onlyTheseIcons={["facebook", "whatsapp", "gmail"]}
           />
         </ul>
       </section>

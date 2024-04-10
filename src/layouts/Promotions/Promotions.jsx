@@ -2,7 +2,6 @@ import { CardPromotion } from "@components/CardPromotion/CardPromotion";
 import { dataPromotions } from "@data/Promotions";
 import { InView } from "react-intersection-observer";
 
-import "./stylesPromotions.scss";
 export const Promotions = () => {
   return (
     <section className="container-fluid container-fluid-promotions">
