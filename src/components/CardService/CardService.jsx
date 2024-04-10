@@ -33,27 +33,14 @@ export const CardService = (props) => {
           <div className="layer-img-service">
             <picture className="picture-img-service">
               <source
-                media="(min-width: 992px)"
                 className="img-service"
                 type="image/avif"
                 srcSet={imagenAvifDesktop}
               />
               <source
-                media="(min-width: 992px)"
                 className="img-service"
                 type="image/webp"
                 srcSet={imagenWebpDesktop}
-              />
-
-              <source
-                className="img-service"
-                type="image/avif"
-                srcSet={imagenAvifMovil}
-              />
-              <source
-                className="img-service"
-                type="image/webp"
-                srcSet={imagenWebpMovil}
               />
 
               <img
