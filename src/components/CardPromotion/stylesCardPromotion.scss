@@ -47,19 +47,18 @@
       @include box-flex($direction: column);
 
       .title-promotion {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 700;
         width: 100%;
-        color: $java-300;
+        color: $java-700;
 
         @include querie-compu {
-
           font-size: 2.7rem;
         }
       }
 
       .info-promotion {
-        font-size: 1rem;
+
 
         @include querie-compu {
 

@@ -3,13 +3,12 @@
 @import "@partials/variables";
 
 .container-fluid-promotions {
-  background-color: $java-950;
-  color: #fff;
+  color: #000;
 
   .row-header-promotions {
     .col-header-promotions {
       .title-section__promotions {
-        color: $java-200;
+        // color: $java-600;
       }
     }
   }
