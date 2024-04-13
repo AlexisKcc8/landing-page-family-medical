@@ -1,9 +1,9 @@
-import { InView } from 'react-intersection-observer';
-import CountUp from 'react-countup';
+import { InView } from "react-intersection-observer";
+import CountUp from "react-countup";
 
-import { dataIconBanner } from '@data/banner';
+import { dataIconBanner } from "@data/banner";
 
-import './styleBanner.scss';
+import "./styleBanner.scss";
 export const Banner = () => {
   const options = {
     threshold: 0,
@@ -21,7 +21,7 @@ export const Banner = () => {
                   <div
                     ref={ref}
                     className={`col-12 col-md-3 item-banner animate__animated ${
-                      inView ? 'animate__fadeInDown' : 'animate__fadeOut'
+                      inView ? "animate__fadeInDown" : "animate__fadeOut"
                     }`}
                   >
                     <div className="card-item-banner" data-wow-delay="0.2s">
@@ -30,7 +30,7 @@ export const Banner = () => {
                           <img src={item.icon} alt={`icon-${item.title}`} />
                         </figure>
                         <div className="text-start  p-0 text-white">
-                          <InView>
+                          <InView {...options}>
                             {({ inView, ref }) => (
                               <h4 ref={ref} className="title">
                                 {
