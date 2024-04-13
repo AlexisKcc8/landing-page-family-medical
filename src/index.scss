@@ -2,9 +2,18 @@
 @import "@partials/media-queries";
 @import "@partials/variables";
 
-:root {
-  // font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: 'myFontInter';
+  font-style: normal;
+  font-weight: 100 900;
+  src: local('myFontInter'),
+    url("/fonts/Inter-VariableFont_slnt,wght.woff2") format('woff2'),
+    url("/fonts/Inter-VariableFont_slnt,wght.woff") format('woff'),
+    url("/fonts/Inter-VariableFont_slnt,wght.ttf") format('truetype');
+  font-display: swap;
+}
 
+:root {
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,12 +24,13 @@
 
 header,
 main {
-  // <uniquifier>: Use a unique and descriptive class name
-  // <weight>: Use a value from 100 to 900
-
-  font-family: "Inter", sans-serif;
+  font-family: "myFontInter", 'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif,
+    Courier;
   font-optical-sizing: auto;
-
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
